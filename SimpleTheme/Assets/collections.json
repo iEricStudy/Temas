@@ -1,0 +1,17 @@
+[
+    {
+        "Id": 1,
+        "Nombre": "Primavera",
+        "Img": "Assets/collections-img/primavera.jpg"
+    },
+    {
+        "Id": 2,
+        "Nombre": "Verano",
+        "Img": "Assets/collections-img/verano.jpg"
+    },
+    {
+        "Id": 3,
+        "Nombre": "Invierno",
+        "Img": "Assets/collections-img/invierno.jpg"
+    }
+]

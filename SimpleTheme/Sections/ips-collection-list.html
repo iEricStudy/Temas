@@ -1,0 +1,28 @@
+<div class="ips-collection-list ips-section">
+    <div class="collection-container flex-box">
+    </div>
+    <script id="ips-collection-list-script">
+        fetch("../Assets/collections.json")
+            .then(response => response.json())
+            .then(json => loadCollections(json))
+            .catch(error => alert("Error: " + error));
+
+        function loadCollections(json) {
+            let sections = document.getElementsByClassName("ips-collection-list");
+            let collections = JSON.parse(JSON.stringify(json));
+            
+            Array.from(sections).forEach(section => {
+                let container = section.querySelector(".collection-container");
+                container.innerHTML = "";
+                collections.forEach(c => {
+                    container.innerHTML += 
+                        '<div class="collection flex-item">\
+                            <h2>' + c["Nombre"] + '</h2>\
+                            <img src="' + "../"+c["Img"] + '" alt="">\
+                            <p><a href="">View All</a><p>\
+                        </div>';
+                });
+            });
+        }
+    </script>
+</div>

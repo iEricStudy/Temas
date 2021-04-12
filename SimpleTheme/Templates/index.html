@@ -1,0 +1,15 @@
+<!--Begin content for index-->
+<div class="ips-slideshow ips-section"></div>
+<div class="ips-collection-list ips-section"></div>
+<!--End content for index-->
+
+<script id="ips-index-script">
+    mutationObserver.observe(main,{subtree: false, childList: true});
+    let sections = Array.from(main.getElementsByClassName("ips-section"));
+    sections.forEach(section => {
+        let tipo = section.classList[0];
+        let cant = sections.indexOf(section) + 1;
+        section.id = 'ips-section-'+ cant;
+        getFile("../Sections/" + tipo + ".html", section, replaceElement); 
+    });
+</script>
