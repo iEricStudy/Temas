@@ -201,8 +201,7 @@ header{
   }
 
 /***** BLOCKS *****/
-.ips-block{
-}
+
 
 .ips-block-content{
   width: 100%;
@@ -280,7 +279,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     animation-name: ips-animation-bottomin;
-    animation-duration: 2s;
+    animation-duration: 1s;
   }
 
     .ips-slideshow .ips-slide .ips-slide-caption h2{
@@ -320,7 +319,7 @@ header{
 
   /* Animation */
 
-  .ips-slideshow .ips-slide .ips-slide-fade{
+  .ips-slideshow .ips-slide.ips-slide-fade{
     animation-name: ips-animation-fade;
     animation-duration: 1.5s;
   }
