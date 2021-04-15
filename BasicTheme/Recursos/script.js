@@ -6,6 +6,14 @@ window.addEventListener('load', init());
 
 function init(){
 
+  //GET HEIGHT
+  function setScreenHeight(){
+    const screenHeight = window.innerHeight - document.querySelector("header").clientHeight;
+    document.documentElement.style.setProperty("--screenHeight",screenHeight+'px');
+  }
+  window.onresize = setScreenHeight;
+  setScreenHeight();
+
   // HEADER
   const toggle = document.getElementsByClassName("ips-nav-toggle")[0];
   const links = document.getElementsByClassName("ips-nav-list")[0];

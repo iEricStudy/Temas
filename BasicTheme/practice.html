@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Recursos/fontawesome-free-5.12.0-web/css/all.min.css">
   <link rel="stylesheet" href="practice.css">
+  <script src="./Recursos/ResizeSensor.js"></script>
+  <script src="./Recursos/ElementQueries.js"></script>
   <title>Document</title>
 </head>
 
@@ -27,7 +29,7 @@
         <a href="#">Service</a>
         <a href="#">Gallery</a>
         <a href="#">Contat Us</a>
-        <a href="#"><span>Search</span></a>
+        <a class="ips-nav-search" href="#"><span>Search</span></a>
       </nav>
     </div>
   </header>
@@ -37,8 +39,7 @@
         <div class="ips-block-content ips-slideshow">
           <div class="ips-slides-container">
             <div class="ips-slide ips-slide-fade">
-              <div class="ips-slide-picture">
-                <img src="../Recursos/banner.png" alt="">
+              <div class="ips-slide-picture" style="background-image: url(../Recursos/banner.png)">
                 <div class="ips-slide-contrast"></div>
               </div>
               <div class="ips-slide-caption">
@@ -51,8 +52,7 @@
               </div>
             </div>
             <div class="ips-slide ips-slide-fade">
-              <div class="ips-slide-picture">
-                <img src="../Recursos/banner2.png" alt="">
+              <div class="ips-slide-picture" style="background-image: url(../Recursos/banner2.png)">
                 <div class="ips-slide-contrast"></div>
               </div>
               <div class="ips-slide-caption">
@@ -92,32 +92,33 @@
   <footer>
     <div class="ips-footer">
       <div class="ips-footer-top">
-        <div class="ips-footer-item ips-footer-nav">
-          <div class="ips-footer-item ips-footer-nav-list">
-            <h3>Menus</h3>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-          </div>
-          <div class="ips-footer-item ips-footer-nav-list">
-            <h3>Social Media</h3>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-              Instagram
-            </a>
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-              Facebook
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter-square"></i>
-              Twitter
-            </a>
-          </div>
+        <div class="ips-footer-item ips-footer-nav-list">
+          <h3>Menus</h3>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+        </div>
+        <div class="ips-footer-item ips-footer-nav-list">
+          <h3>Social Media</h3>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+            Instagram
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+            Facebook
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter-square"></i>
+            Twitter
+          </a>
         </div>
         <div class="ips-footer-item ips-footer-text">
           <h3>Titulo</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima dolorum dolores repudiandae voluptas? Nemo animi dolor, corporis consequatur veniam pariatur dicta a nam sunt dignissimos? Maiores, reiciendis hic suscipit error sit unde veritatis. Fugiat sit maiores quas voluptates provident culpa saepe dolorum libero! Adipisci doloremque corrupti animi beatae sapiente.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima dolorum dolores repudiandae
+            voluptas? Nemo animi dolor, corporis consequatur veniam pariatur dicta a nam sunt dignissimos? Maiores,
+            reiciendis hic suscipit error sit unde veritatis. Fugiat sit maiores quas voluptates provident culpa saepe
+            dolorum libero! Adipisci doloremque corrupti animi beatae sapiente.</p>
         </div>
         <div class="ips-footer-item ips-footer-newsletter">
           <h3>Noticias</h3>

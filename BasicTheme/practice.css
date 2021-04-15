@@ -58,6 +58,9 @@
   --tran-a-3: all 0.3s linear;
   --tran-bg-2: background 0.2s linear;
   --tran-color-2: var(--tran-bg-2), color 0.2s linear;
+
+  /* DINAMIC */
+  --screenHeight: 0;
 }
 
 /******GLOBAL*****/
@@ -65,6 +68,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body{
+  height: 100%;
 }
 
 body{
@@ -93,7 +101,7 @@ img{
   color: var(--clr-grey-10);
   border: none;
   padding: 10px 30px;
-  margin: 10px;
+  margin: 10px auto;
   font-size: var(--fs-title-1);
   transition: var(--tran-bg-2);
 }
@@ -161,6 +169,7 @@ header{
 
   .ips-header .ips-nav-list a{
     color: var(--clr-grey-10);
+    border-top: 1px solid var(--clr-primary-4);
     font-size: var(--fs-header);
     text-transform: capitalize;
     display: block;
@@ -169,13 +178,16 @@ header{
   }
 
     .ips-header .ips-nav-list a:hover{
-      color: var(--clr-primary-1);
       padding-left: 1.5rem;
-      background-color: var(--clr-primary-3);
+      background-color: var(--clr-primary-4);
+    }
+
+    .ips-header .ips-nav-list .ips-nav-search{
+      display: none;
     }
 
   .ips-header .ips-show-nav{
-    height: 10rem;
+    height: auto;
   }
 
   @media screen and (min-width: 800px){
@@ -203,6 +215,7 @@ header{
       }
       
         .ips-header .ips-nav-list a{
+          border: none;
           padding: 0px 15px;
           margin: 0 0.1rem;
         }
@@ -210,7 +223,12 @@ header{
           .ips-header .ips-nav-list a:hover{
             padding: 0px 15px;
             background: transparent;
+            color: var(--clr-primary-1);
           }
+
+        .ips-header .ips-nav-list .ips-nav-search{
+          display: block;
+        }
   }
 
   @media screen and (min-width: 1000px){
@@ -250,6 +268,7 @@ header{
       }
 
     .ips-footer .ips-footer-top .ips-footer-nav-list a{
+      align-self: flex-start;
       color: var(--clr-grey-9);
       margin: 5px 0;
     }
@@ -269,25 +288,31 @@ header{
   }
 
   @media screen and (min-width: 600px){
-    .ips-footer .ips-footer-top .ips-footer-nav{
-      flex-direction: row;
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 50%;
     }
   }
 
   @media screen and (min-width: 900px){
-    .ips-footer .ips-footer-top .ips-footer-nav,
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 20%;
+    }
+
     .ips-footer .ips-footer-top .ips-footer-text{
-      flex: 50%;
+      flex: 40%;
     }
 
     .ips-footer .ips-footer-top .ips-footer-newsletter{
-      flex: 0 0 50%;
-      width: 50%;
+      flex: 0 0 100%;
     }
   }
 
-  @media screen and (min-width: 1130px){
-    .ips-footer .ips-footer-top > *{
+  @media screen and (min-width: 1030px){
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 20%;
+    }
+    .ips-footer .ips-footer-top .ips-footer-text,
+    .ips-footer .ips-footer-top .ips-footer-newsletter{
       flex: 30% !important;
     }
   }
@@ -351,8 +376,12 @@ header{
     transform: translate(25%,-50%);
   }
 
+  .ips-slideshow .ips-slides-container{
+    width: 100%;
+  }
 
   .ips-slideshow .ips-slide{
+    overflow: hidden;
     display: none;
     position: relative;
   }
@@ -363,8 +392,14 @@ header{
 
     .ips-slideshow .ips-slide .ips-slide-picture{
       width: 100%;
-      height: 100%;
+      height: 270px;
       position: relative;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      
+      animation-name: ips-animation-zoomin;
+      animation-duration: 30s;
     }
 
       .ips-slideshow .ips-slide .ips-slide-picture .ips-slide-contrast{
@@ -373,14 +408,6 @@ header{
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.5);
-      }
-    
-      .ips-slideshow .ips-slide .ips-slide-picture img{
-        width: 100%;
-        height: 100%;
-        transform: scale(1.3,1.3);
-        animation-name: ips-animation-zoomin;
-        animation-duration: 30s;
       }
 
   .ips-slideshow .ips-slide .ips-slide-caption{
@@ -412,6 +439,12 @@ header{
 
   /* Responsive */
 
+  @media screen and (min-width: 500px){
+    .ips-slideshow .ips-slide .ips-slide-picture{
+      height: 400px;
+    }
+  }
+
   @media screen and (min-width: 800px){
     
     .ips-slideshow [class*="ips-slide-control"]{
@@ -422,6 +455,11 @@ header{
     .ips-slideshow [class*="ips-slide-control"] i{
       font-size: 30px;
     }
+
+    .ips-slideshow .ips-slide .ips-slide-picture{
+      height: 500px;
+    }
+
     .ips-slideshow .ips-slide .ips-slide-caption h2{
       font-size: var(--fs-title-4);
     }
@@ -433,6 +471,10 @@ header{
   }
 
   @media screen and (min-width: 1000px){
+    .ips-slideshow .ips-slide .ips-slide-picture{
+      height: var(--screenHeight);
+    }
+
     .ips-slideshow .ips-slide .ips-slide-caption h2{
       font-size: var(--fs-title-8);
     }
@@ -460,8 +502,8 @@ header{
   }
 
   @keyframes ips-animation-zoomin{
-    from {transform: scale(1,1)}
-    to   {transform: scale(1.3,1.3)}
+    from {background-size: cover;}
+    to   {transform: scale(1.5,1.5);}
   }
 
 /***** TEXT & IMAGE *****/
@@ -492,7 +534,7 @@ header{
     .ips-image-text .ips-text p{
       color: var(--clr-grey-2);
       font-size: var(--fs-text-1);
-      margin: 20px 0px;
+      margin: 20px;
     }
 
   .ips-image-text .ips-image{
@@ -504,3 +546,8 @@ header{
       margin: auto;
       width: 100%;
     }  
+
+    .ips-image-text .ips-image[min-width~="800px"] img{
+      width: 50%;
+      min-width: 450px;
+    }
