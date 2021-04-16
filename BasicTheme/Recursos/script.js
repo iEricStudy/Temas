@@ -35,14 +35,25 @@ function init(){
   // SLIDESHOW
   class Slider {
     constructor(slideshow){
+
       this.counter = 1;
-      this.timer = setInterval(() => this.autoSlide(), 8000);
       this.slides = slideshow.querySelectorAll('.ips-slideshow .ips-slide');
-      slideshow.querySelector('.ips-slideshow .ips-slide-control-prev')
-        .onclick = () => this.changeSlide(-1);
-      slideshow.querySelector('.ips-slideshow .ips-slide-control-next')
-        .onclick = () => this.changeSlide(1);
-      this.slideMove(this.counter);
+
+      if(this.slides.length > 1){
+
+        this.timer = setInterval(() => this.autoSlide(), 8000);
+        slideshow.querySelector('.ips-slide-control-prev')
+          .onclick = () => this.changeSlide(-1);
+        slideshow.querySelector('.ips-slide-control-next')
+          .onclick = () => this.changeSlide(1);
+        this.slideMove(this.counter);
+      }
+      else{
+        slideshow.querySelector('.ips-slide-control-prev').style.display = "none";
+        slideshow.querySelector('.ips-slide-control-next').style.display = "none";
+        slideshow.querySelector(".ips-slide-picture").style.animation = "none";
+        this.autoSlide();
+      }
     }
 
     autoSlide(){
@@ -78,6 +89,7 @@ function init(){
 
   function loadSliders() {
     const slideshow = document.querySelectorAll('.ips-slideshow');
+
     slideshow.forEach((sItem) => {
       sItem.setAttribute("slideAction",new Slider(sItem));
     });
