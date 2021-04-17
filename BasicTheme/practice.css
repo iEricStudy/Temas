@@ -143,7 +143,7 @@ img{
     align-items: center;
   }
 
-    .ips-text .ips-content h2{
+    .ips-block-content h2{
       margin: 20px;
       display: inline-block;
       font-size: var(--fs-title-6);
@@ -181,6 +181,13 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.ips-items-group{
+  padding: 20px 50px;
+  display: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /**** Header *****/
@@ -578,7 +585,7 @@ header{
   flex-direction: column;
 }
 
-  .ips-image-text .ips-text[min-width~="900px"] .ips-content{
+  .ips-image-text:not(.ips-comparison-item) .ips-text[min-width~="900px"] .ips-content{
     width: 80%;
   }
 
@@ -587,7 +594,7 @@ header{
     flex: 50%;
   }
 
-    .ips-image-text .ips-image[min-width~="730px"] img{
+    .ips-image-text:not(.ips-comparison-item) .ips-image[min-width~="730px"] img{
       margin: auto;
       width: 50%;
       min-width: 450px;
@@ -635,14 +642,38 @@ header{
 
 /**** IMAGE TEXT GROUP ****/
 
-.ips-block .ips-block-content.ips-comparison-group{
-  padding-left: 50px;
-  padding-right: 50px;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+  .ips-comparison-group .ips-items-group .ips-image-text{
+    width: auto;
+    flex: 100%;
+  }
+
+  .ips-comparison-group .ips-items-group[min-width~="700px"] .ips-comparison-item{
+    flex: 50%;
+  }
+
+  .ips-comparison-group .ips-items-group[min-width~="900px"] .ips-comparison-item{
+    flex: 30%;
+  }
+
+  .ips-comparison-group .ips-items-group .ips-comparison-item .ips-image[min-width~="630px"] img{
+    margin: auto;
+    width: 50%;
+    min-width: 450px;
+  }
+
+/***** PRODUCT LIST *****/
+
+.ips-product-item{
+  flex: 30%;
+  padding: 20px;
 }
 
-  .ips-comparison-group .ips-image-text{
-    width: auto;
-    flex: 20%;
-  }
+.ips-product-item .ips-product-details{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ips-product-item .ips-product-details .ips-product-price{
+  font-weight: bold;
+}
