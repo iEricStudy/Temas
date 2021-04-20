@@ -1,0 +1,19 @@
+/**** COMPARISON GROUP ****/
+
+.ips-comparison-group .ips-items-group{
+  justify-content: center;
+  align-items: center;
+}
+
+  .ips-comparison-group .ips-items-group .ips-image-text{
+    width: auto;
+    flex: 0 0 100%;
+  }
+
+  .ips-comparison-group .ips-items-group[min-width~="700px"] .ips-comparison-item{
+    flex: 0 0 50%;
+  }
+
+  .ips-comparison-group .ips-items-group[min-width~="950px"] .ips-comparison-item{
+    flex: 0 0 30%;
+  }

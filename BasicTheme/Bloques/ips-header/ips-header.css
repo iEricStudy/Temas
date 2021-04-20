@@ -1,0 +1,115 @@
+/**** Header *****/
+
+header{
+  background: var(--clr-primary-5);
+}
+
+  .ips-header a{
+    color: #fff;
+  }
+
+  .ips-header .ips-nav-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 2rem;
+  }
+
+    .ips-header .ips-nav-header .ips-nav-toggle{
+      font-size: var(--fs-header);
+      color: #fff;
+      background: transparent;
+      border-color: transparent;
+      transition: var(--tran-a-3);
+      cursor: pointer;
+    }
+    
+      .ips-header .ips-nav-header .ips-nav-toggle:hover{
+        color: var(--clr-primary-1);
+      }
+
+      .ips-header .ips-nav-header .ips-nav-toggle.ips-nav-activate{
+        transform: rotate(90deg);
+      }
+
+    .ips-header .ips-nav-header .ips-nav-logo{
+      font-size: var(--fs-title-4);
+    }
+
+  .ips-header .ips-nav-list{
+    height: 0;
+    overflow: hidden;
+    transition: var(--tran-a-3);
+  }
+
+  .ips-header .ips-nav-list a{
+    color: var(--clr-grey-10);
+    border-top: 1px solid var(--clr-primary-4);
+    font-size: var(--fs-header);
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--tran-a-3);
+  }
+
+    .ips-header .ips-nav-list a:hover{
+      padding-left: 1.5rem;
+      background-color: var(--clr-primary-4);
+    }
+
+    .ips-header .ips-nav-list .ips-nav-search{
+      display: none;
+    }
+
+  .ips-header .ips-show-nav{
+    height: auto;
+  }
+
+  @media screen and (min-width: 800px){
+    .ips-header{
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+      .ips-header .ips-nav-header{
+        padding: 0;
+      }
+
+        .ips-header .ips-nav-header .ips-nav-toggle{
+          display: none;
+        }
+
+      .ips-header .ips-nav-list{
+        height: auto;
+        display: flex;
+        background: transparent;
+      }
+      
+        .ips-header .ips-nav-list a{
+          border: none;
+          padding: 0px 15px;
+          margin: 0 0.1rem;
+        }
+
+          .ips-header .ips-nav-list a:hover{
+            padding: 0px 15px;
+            background: transparent;
+            color: var(--clr-primary-1);
+          }
+
+        .ips-header .ips-nav-list .ips-nav-search{
+          display: block;
+        }
+  }
+
+  @media screen and (min-width: 1000px){
+    .ips-header .ips-nav-list a{
+      margin: 0 0.5rem;
+    }
+  }

@@ -1,0 +1,23 @@
+/**** IMAGE GROUP *****/
+.ips-block-content.ips-image-group{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+  .ips-image-group .ips-image{
+    flex: 100%;
+    margin: 0px 40px;
+  }
+
+    .ips-image-group .ips-image .ips-image-item{
+      height: 500px;
+    }
+
+  .ips-image-group[min-width~="750px"] .ips-image{
+    flex: 50%;
+    margin: 0;
+  }
+
+  .ips-image-group[min-width~="950px"] .ips-image{
+    flex: 20%;
+  }

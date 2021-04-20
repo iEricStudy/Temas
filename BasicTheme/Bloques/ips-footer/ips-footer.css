@@ -1,0 +1,92 @@
+/*****FOOTER******/
+
+.ips-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+  .ips-footer .ips-footer-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: var(--clr-primary-1);
+    color: var(--clr-grey-10);
+    padding: 2rem 5rem;
+    font-size: var(--fs-text-1);
+  }
+
+    .ips-footer .ips-footer-top .ips-footer-item{
+      flex: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+      .ips-footer .ips-footer-top .ips-footer-item h3{
+        font-size: var(--fs-title-1);
+        margin-bottom: 10px;
+      }
+
+    .ips-footer .ips-footer-top .ips-footer-nav-list a{
+      align-self: flex-start;
+      color: var(--clr-grey-9);
+      margin: 5px 0;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-nav-list i{
+      vertical-align: middle;
+      color: var(--clr-primary-7);
+      font-size: 2rem;
+      margin-right: 5px;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-newsletter .ips-btn{
+      margin: 0;
+      width: 100%;
+    }
+
+  .ips-footer .ips-footer-bottom{
+    background: var(--clr-primary-11);
+    padding: 1rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  @media screen and (min-width: 600px){
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 50%;
+    }
+    .ips-footer .ips-footer-top .ips-footer-newsletter .ips-btn{
+      width: 10rem;
+    }
+  }
+
+  @media screen and (min-width: 900px){
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 20%;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-text{
+      flex: 40%;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-newsletter{
+      flex: 0 0 100%;
+    }
+  }
+
+  @media screen and (min-width: 1030px){
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 20%;
+    }
+    .ips-footer .ips-footer-top .ips-footer-text,
+    .ips-footer .ips-footer-top .ips-footer-newsletter{
+      flex: 30% !important;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-newsletter .ips-btn{
+      margin: 0;
+      width: 100%;
+    }
+  }

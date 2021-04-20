@@ -1,0 +1,23 @@
+/***** TEXT & IMAGE *****/
+
+.ips-image-text{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+  .ips-image-text .ips-text[min-width~="900px"] .ips-content{
+    width: 80%;
+  }
+
+  .ips-image-text .ips-image{
+    padding: 10px;
+    flex: 50%;
+  }
+
+    .ips-image-text:not(.ips-comparison-item) .ips-image[min-width~="730px"] img{
+      margin: auto;
+      width: 50%;
+      min-width: 450px;
+    }
