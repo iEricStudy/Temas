@@ -1,0 +1,26 @@
+{
+  "nombre": "Example Collection",
+  "estado": true,
+  "productos": [
+    {
+      "nombre": "Producto Ejemplo",
+      "precio": 500.00,
+      "img": "../Recursos/img1.jpg"
+    },
+    {
+      "nombre": "Producto Ejemplo",
+      "precio": 500.00,
+      "img": "../Recursos/img2.jpg"
+    },
+    {
+      "nombre": "Producto Ejemplo",
+      "precio": 500.00,
+      "img": "../Recursos/img3.jpg"
+    },
+    {
+      "nombre": "Producto Ejemplo",
+      "precio": 500.00,
+      "img": "../Recursos/img4.jpg"
+    }
+  ]
+}
