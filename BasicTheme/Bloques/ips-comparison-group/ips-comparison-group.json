@@ -1,0 +1,52 @@
+{
+  "block-name": "Grupo de Comparacion",
+  "content":{
+    "comparison-items": {},
+    "title": "Comparison"
+  },
+  "config":{
+    "comparison-items":{
+      "id": "comparison-items",
+      "type": "item-selector",
+      "label": "Comparaciones",
+      "default":{
+        "ips-comparison-item-0": {
+          "title": "Comparison Item",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
+          "img": "../Recursos/img1.jpg"
+        },
+        "ips-comparison-item-1": {
+          "title": "Comparison Item",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
+          "img": "../Recursos/img2.jpg"
+        }
+      }
+    },
+    "title": {
+      "id": "title",
+      "type": "text",
+      "label": "Titulo",
+      "default": "Comparison"
+    },
+    "items-config": {
+      "title": {
+        "id": "title",
+        "type": "text",
+        "label": "Titulo",
+        "default": "Item Comparison"
+      },
+      "text": {
+        "id": "text",
+        "type": "text",
+        "label": "Texto",
+        "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
+      },
+      "img":{
+        "id": "img",
+        "type": "input file",
+        "label": "Imagen",
+        "default": "../Recursos/img1.jpg"
+      }
+    }
+  }
+}

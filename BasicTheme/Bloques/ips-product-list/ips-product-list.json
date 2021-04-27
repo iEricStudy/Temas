@@ -1,0 +1,61 @@
+{
+  "id":"ips-product-list",
+  "product-_name":"block-name",
+  "content": {
+    "products": {},
+    "title": ""
+  },
+  "config": {
+    "products": {
+      "id": "products",
+      "type": "item-selector",
+      "label": "Productos",
+      "default": {
+        "ips-product-item-0": {
+          "image": "../Recursos/img1.jpg",
+          "name": "Producto",
+          "details": "Detalle Producto",
+          "price": 100
+        },
+        "ips-product-item-1": {
+          "image": "../Recursos/img2.jpg",
+          "name": "Producto",
+          "details": "Detalle Producto",
+          "price": 200
+        }
+      }
+    },
+    "title": {
+      "id": "title",
+      "type": "text",
+      "label": "Titulo",
+      "default": "Product List"
+    },
+    "items-config": {
+      "image": {
+        "id": "image",
+        "type": "file input",
+        "label": "Imagen",
+        "default": "../Recursos/img1.jpg"
+      },
+      "name": {
+        "id": "name",
+        "type": "text",
+        "label": "Nomre",
+        "default": "Producto"
+      },
+      "details": {
+        "id": "details",
+        "type": "text",
+        "label": "Detalles",
+        "default": "Detalles Producto"
+      },
+      "price": {
+        "id": "price",
+        "type": "number",
+        "label": "Precio",
+        "default": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ips-image-group",
+  "block-name": "Image Group",
+  "content": {
+    "images": {},
+    "title": ""
+  },
+  "config":{
+    "images": {
+      "id": "image",
+      "type": "item-selector",
+      "label": "Imagenes",
+      "default": {
+        "ips-image-item-0": {
+          "img": "../Recursos/img1.jpg",
+          "title": ""
+        },
+        "ips-image-item-1": {
+          "img": "../Recursos/img2.jpg",
+          "title": ""
+        }
+      }
+    },
+    "title": {
+      "id": "title",
+      "type": "text",
+      "label": "Titulo",
+      "Default": ""
+    },
+    "items-config": {
+      "img": {
+        "id": "img",
+        "type": "input file",
+        "label": "Imagen",
+        "default": "../Recursos/img1.jpg"
+      },
+      "title": {
+        "id": "title",
+        "type": "text",
+        "label": "Titulo",
+        "default": ""
+      }
+    }
+  }
+}

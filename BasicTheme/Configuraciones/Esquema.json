@@ -1,0 +1,22 @@
+{
+  "General": "Informacion",
+  "Paginas": {
+    "Home": {
+      "Datos" : {
+        "Info": "Info"
+      },
+      "Bloques": {
+        "Header": {
+
+        },
+        "ips-slideshow":{
+          "type": "ips-slideshow",
+          "datos": {
+            
+          }
+        }
+
+      }
+    }
+  }
+}

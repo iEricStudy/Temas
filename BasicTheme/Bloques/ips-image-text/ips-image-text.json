@@ -1,21 +1,29 @@
 {
-  "nombre_bloque": "Imagen con Texto",
-  "datos" : {
-    "titulo" : "",
-    "texto" : "",
+  "id": "ips-image-text",
+  "block-name": "Image with Text",
+  "content" : {
+    "image": "",
+    "title" : "",
+    "text" : "",
     "btn-label" : "",
     "btn-link" : ""
   },
-  "configuracion": {
-    "titulo" : {
-      "id" : "titulo",
-      "tipo" : "text",
+  "config": {
+    "image":{
+      "id": "image",
+      "type": "input file",
+      "label": "Imagen",
+      "defaul": "../Recursos/info.png"
+    },
+    "title" : {
+      "id" : "title",
+      "type" : "text",
       "label" : "Titulo",
       "default" : "Texto con Imagen"
     },
-    "texto" : {
-      "id" : "texto",
-      "tipo" : "richtext",
+    "text" : {
+      "id" : "text",
+      "type" : "richtext",
       "label" : "Texto",
       "default" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
     }

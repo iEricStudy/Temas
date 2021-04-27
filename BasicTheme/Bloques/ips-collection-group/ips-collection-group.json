@@ -1,0 +1,42 @@
+{
+  "block-name": "Collection Group",
+  "content": {
+    "collections": {},
+    "title": ""
+  },
+  "config": {
+    "collection": {
+      "id": "CollectionsSelector",
+      "type": "item-selector",
+      "label": "Colecciones",
+      "default": {
+        "ips-collection-item-0": {
+          "img": "../Recursos/img1.jpg",
+          "text": "Categoria 1",
+          "overlay_color": "rgba(0,0,0,0.5)",
+          "url": ""
+        },
+        "ips-collection-item-1": {
+          "img": "../Recursos/img1.jpg",
+          "text": "Categoria 2",
+          "overlay_color": "rgba(0,0,0,0.5)",
+          "url": ""
+        }
+      }
+    },
+    "title": {
+      "id": "title",
+      "type": "text",
+      "label": "Titulo",
+      "default": "Collections"
+    },
+    "items-config": {
+      "collection": {
+        "id": "collection",
+        "type": "select",
+        "label": "Coleccion",
+        "default": "ExampleCollection"
+      }
+    }
+  }
+}

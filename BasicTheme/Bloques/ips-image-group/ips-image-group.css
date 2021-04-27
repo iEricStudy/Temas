@@ -5,6 +5,7 @@
 }
 
   .ips-image-group .ips-image{
+    position: relative;
     flex: 100%;
     margin: 0px 40px;
   }
