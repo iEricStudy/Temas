@@ -1,0 +1,195 @@
+/******FONT******/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*****VARIABLES*****/
+:root{
+  /* COLORS */
+  /* Dark shades of primary color */
+  --clr-primary-0: #011f15;
+  --clr-primary-1: #023524;
+  --clr-primary-1: #01412d;
+  --clr-primary-2: #036145;
+  --clr-primary-3: #068b64;
+  --clr-primary-4: #09a879;
+  /* Main primary color */
+  --clr-primary-5: #0fc690;
+  /* Light shades of primary color */
+  --clr-primary-6: #25ecb0;
+  --clr-primary-7: #40fcc3;
+  --clr-primary-8: #80ffd9;
+  --clr-primary-9: #b7ffe9;
+  --clr-primary-10: #e1fff6;
+  --clr-primary-11: #edf5f3;
+  /* Grays */
+  --clr-grey-1: #272c2b;
+  --clr-grey-2: #3e4443;
+  --clr-grey-3: #575e5d;
+  --clr-grey-4: #7a8180;
+  --clr-grey-5: #9ea5a4;
+  --clr-grey-6: #c3c9c8;
+  --clr-grey-7: #d9dfde;
+  --clr-grey-8: #eaf0f0;
+  --clr-grey-9: #ecf3f3;
+  --clr-grey-10: #f5f5f5;
+  /* Lights */
+  --clr-light-1: white;
+  --clr-light-2: #fafafa;
+  --clr-light-3: #f8f8f8;
+  --clr-light-4: #f5f5f5;
+  /* FONTS */
+  --ff-text: 'poppins', sans-serif;
+  --ff-secondary: ;
+  --fs-text-1: 1rem;
+  --fs-text-2: 1.2rem;
+  --fs-text-3: 1.3rem;
+  --fs-text-4: 1.4rem;
+  --fs-title-1: 1.7rem;
+  --fs-title-2: 2rem;
+  --fs-title-3: 2.4rem;
+  --fs-title-4: 2.7rem;
+  --fs-title-5: 3rem;
+  --fs-title-6: 3.4rem;
+  --fs-title-7: 3.7rem;
+  --fs-title-8: 4rem;
+  --fs-title-9: 4.4rem;
+  --fs-title-10: 4.7rem;
+  --fs-header: 1.3rem;
+  --fs-base: 16px;
+
+  /* OTHERS */
+  --tran-a-1: all 0.1s linear;
+  --tran-a-2: all 0.2s linear;
+  --tran-a-3: all 0.3s linear;
+  --tran-bg-2: background 0.2s linear;
+  --tran-color-2: var(--tran-bg-2), color 0.2s linear;
+
+  /* DINAMIC */
+  --screenHeight: 0;
+}
+
+/******GLOBAL*****/
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  height: 100%;
+}
+
+body{
+  font-family: var(--ff-text);
+  font-size: var(--fs-base);
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img:not(.header){
+  width: 100%;
+}
+
+/*****FOOTER******/
+
+.ips-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+  .ips-footer .ips-footer-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: var(--clr-primary-1);
+    color: var(--clr-grey-10);
+    padding: 2rem 5rem;
+    font-size: var(--fs-text-1);
+  }
+
+    .ips-footer .ips-footer-top .ips-footer-item{
+      flex: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+      .ips-footer .ips-footer-top .ips-footer-item h3{
+        font-size: var(--fs-title-1);
+        margin-bottom: 10px;
+      }
+
+    .ips-footer .ips-footer-top .ips-footer-nav-list a{
+      align-self: flex-start;
+      color: var(--clr-grey-5);
+      margin: 5px 0;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-nav-list i{
+      vertical-align: middle;
+      color: var(--clr-primary-7);
+      font-size: 2rem;
+      margin-right: 5px;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-nav-list .ips-social-group{
+      display: flex;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-newsletter .ips-btn{
+      margin: 0;
+      width: 100%;
+    }
+
+  .ips-footer .ips-footer-bottom{
+    background: var(--clr-primary-11);
+    padding: 1rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  @media screen and (min-width: 600px){
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 50%;
+    }
+    .ips-footer .ips-footer-top .ips-footer-newsletter .ips-btn{
+      width: 10rem;
+    }
+  }
+
+  @media screen and (min-width: 900px){
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 20%;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-text{
+      flex: 40%;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-newsletter{
+      flex: 0 0 100%;
+    }
+  }
+
+  @media screen and (min-width: 1030px){
+    .ips-footer .ips-footer-top .ips-footer-nav-list{
+      flex: 20%;
+    }
+    .ips-footer .ips-footer-top .ips-footer-text,
+    .ips-footer .ips-footer-top .ips-footer-newsletter{
+      flex: 30% !important;
+    }
+
+    .ips-footer .ips-footer-top .ips-footer-newsletter .ips-btn{
+      margin: 0;
+      width: 100%;
+    }
+  }

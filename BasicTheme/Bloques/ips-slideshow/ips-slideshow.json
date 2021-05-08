@@ -1,17 +1,17 @@
 {
-  "nombre_bloque": "Grupo de Coleccciones",
+  "nombre_bloque": "Slideshow",
   "contenido": {
-    "ips-collection-item-0": {
+    "ips-slide-item-0": {
       "imagen": "../Recursos/img1.jpg",
       "texto": "Categoria 1",
       "overlay_color": "rgba(0,0,0,0.5)"
     },
-    "ips-collection-item-1": {
+    "ips-slide-item-1": {
       "imagen": "../Recursos/img1.jpg",
       "texto": "Categoria 2",
       "overlay_color": "rgba(0,0,0,0.5)"
     },
-    "ips-collection-item-2": {
+    "ips-slide-item-2": {
       "imagen": "../Recursos/img1.jpg",
       "texto": "Categoria 3",
       "overlay_color": "rgba(0,0,0,0.5)"

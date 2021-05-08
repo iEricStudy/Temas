@@ -1,6 +1,8 @@
 {
-  "id": "ips-image-text",
+  "id": "",
   "block-name": "Image with Text",
+  "type": "ips-image-text",
+  "path": "Bloques\\ips-simple-text\\ips-simple-text",
   "content" : {
     "image": "",
     "title" : "",

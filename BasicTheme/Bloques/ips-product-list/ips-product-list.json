@@ -1,6 +1,8 @@
 {
-  "id":"ips-product-list",
-  "product-_name":"block-name",
+  "id":"",
+  "block-name":"Product List",
+  "type":"ips-product-list",
+  "path": "Bloques\\ips-product-list\\ips-product-list",
   "content": {
     "products": {},
     "title": ""

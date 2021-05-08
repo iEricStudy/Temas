@@ -1,6 +1,8 @@
 {
-  "id": "ips-simple-text",
+  "id": "",
   "block-name": "Simple Text",
+  "type": "ips-simple-text",
+  "path": "Bloques\\ips-simple-text\\ips-simple-text",
   "content": {
     "title": "",
     "text": ""

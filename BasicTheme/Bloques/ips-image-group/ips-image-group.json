@@ -1,6 +1,8 @@
 {
-  "id": "ips-image-group",
+  "id": "",
   "block-name": "Image Group",
+  "type": "ips-image-group",
+  "path": "Bloques\\ips-image-group\\ips-image-group",
   "content": {
     "images": {},
     "title": ""

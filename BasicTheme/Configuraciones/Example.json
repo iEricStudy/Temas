@@ -1,0 +1,217 @@
+{
+  "General": "Informacion",
+  "path": "http://127.0.0.1:8887/",
+  "Paginas": {
+    "Home": {
+      "name": "Portada",
+      "path": "Plantilla\\portada",
+      "diseno": "Disenos\\sitio",
+      "Bloques": {
+        "ips-block-0": {
+          "id": "",
+          "block-name": "Slideshow",
+          "type": "ips-slideshow",
+          "path": "Bloques\\ips-slideshow\\ips-slideshow",
+          "content": {
+            "ips-slide-item-0": {
+              "image": "../Recursos/img1.jpg",
+              "text": "Categoria 1",
+              "overlay_color": "rgba(0,0,0,0.5)"
+            },
+            "ips-slide-item-1": {
+              "image": "../Recursos/img1.jpg",
+              "text": "Categoria 2",
+              "overlay_color": "rgba(0,0,0,0.5)"
+            },
+            "ips-slide-item-2": {
+              "image": "../Recursos/img1.jpg",
+              "text": "Categoria 3",
+              "overlay_color": "rgba(0,0,0,0.5)"
+            }
+          },
+          "config": {
+            "slides": {
+              "id": "SlidesSelector",
+              "type": "item-selector",
+              "label": "slides",
+              "default": {}
+            },
+            "auto-scroll": {
+              "id": "AutoScroll",
+              "type": "checkBox",
+              "label": "Slide automatico"
+            }
+          }
+        },
+        "ips-block-1": {
+          "id": "",
+          "block-name": "Image with Text",
+          "type": "ips-image-text",
+          "path": "Bloques\\ips-image-text\\ips-image-text",
+          "content": {
+            "image": "",
+            "title": "",
+            "text": "",
+            "btn-label": "",
+            "btn-link": ""
+          },
+          "config": {
+            "image": {
+              "id": "image",
+              "type": "input file",
+              "label": "Imagen",
+              "defaul": "../Recursos/info.png"
+            },
+            "title": {
+              "id": "title",
+              "type": "text",
+              "label": "Titulo",
+              "default": "Texto con Imagen"
+            },
+            "text": {
+              "id": "text",
+              "type": "richtext",
+              "label": "Texto",
+              "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
+            }
+          }
+        },
+        "ips-block-2": {
+          "id": "",
+          "block-name": "Simple Text",
+          "type": "ips-simple-text",
+          "path": "Bloques\\ips-simple-text\\ips-simple-text",
+          "content": {
+            "title": "",
+            "text": ""
+          },
+          "config": {
+            "title": {
+              "id": "title",
+              "type": "text",
+              "label": "Titulo",
+              "default": "Information"
+            },
+            "text": {
+              "id": "text",
+              "type": "textarea",
+              "label": "Texto",
+              "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem fugit nihil sed, ipsum reiciendis blanditiis, nisi nobis magni, nulla fugiat dolore? Totam, odit? Eius delectus dolorem atque cupiditate pariatur velit iure ipsum natus at minus inventore autem accusamus quod, repellat asperiores architecto iusto sequi similique doloremque expedita. Quod libero ratione temporibus unde provident delectus voluptates amet, porro accusamus placeat modi enim totam iste laborum possimus ducimus quidem nobis sapiente ipsum corporis accusantium? Qui sint iste cumque eum molestias eius fugiat at eos voluptatibus inventore! Facere temporibus ipsa ipsum neque repudiandae recusandae asperiores natus illo accusantium, est iure quaerat quibusdam!"
+            }
+          }
+        },
+        "ips-block-3": {
+          "id": "",
+          "block-name": "Product List",
+          "type": "ips-product-list",
+          "path": "Bloques\\ips-product-list\\ips-product-list",
+          "content": {
+            "products": {},
+            "title": ""
+          },
+          "config": {
+            "products": {
+              "id": "products",
+              "type": "item-selector",
+              "label": "Productos",
+              "default": {
+                "ips-product-item-0": {
+                  "image": "../Recursos/img1.jpg",
+                  "name": "Producto",
+                  "details": "Detalle Producto",
+                  "price": 100
+                },
+                "ips-product-item-1": {
+                  "image": "../Recursos/img2.jpg",
+                  "name": "Producto",
+                  "details": "Detalle Producto",
+                  "price": 200
+                }
+              }
+            },
+            "title": {
+              "id": "title",
+              "type": "text",
+              "label": "Titulo",
+              "default": "Product List"
+            },
+            "items-config": {
+              "image": {
+                "id": "image",
+                "type": "file input",
+                "label": "Imagen",
+                "default": "../Recursos/img1.jpg"
+              },
+              "name": {
+                "id": "name",
+                "type": "text",
+                "label": "Nomre",
+                "default": "Producto"
+              },
+              "details": {
+                "id": "details",
+                "type": "text",
+                "label": "Detalles",
+                "default": "Detalles Producto"
+              },
+              "price": {
+                "id": "price",
+                "type": "number",
+                "label": "Precio",
+                "default": 100
+              }
+            }
+          }
+        },
+        "ips-block-4": {
+          "id": "",
+          "block-name": "Image Group",
+          "type": "ips-image-group",
+          "path": "Bloques\\ips-image-group\\ips-image-group",
+          "content": {
+            "images": {},
+            "title": ""
+          },
+          "config": {
+            "images": {
+              "id": "image",
+              "type": "item-selector",
+              "label": "Imagenes",
+              "default": {
+                "ips-image-item-0": {
+                  "img": "../Recursos/img1.jpg",
+                  "title": ""
+                },
+                "ips-image-item-1": {
+                  "img": "../Recursos/img2.jpg",
+                  "title": ""
+                }
+              }
+            },
+            "title": {
+              "id": "title",
+              "type": "text",
+              "label": "Titulo",
+              "Default": ""
+            },
+            "items-config": {
+              "img": {
+                "id": "img",
+                "type": "input file",
+                "label": "Imagen",
+                "default": "../Recursos/img1.jpg"
+              },
+              "title": {
+                "id": "title",
+                "type": "text",
+                "label": "Titulo",
+                "default": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "estilo": {}
+}

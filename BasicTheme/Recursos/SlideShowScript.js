@@ -20,24 +20,22 @@ function init(){
   setScreenHeight();
 
   // HEADER
-  if(document.querySelector("header")){
-    const toggle = document.getElementsByClassName("ips-nav-toggle")[0];
-    const links = document.getElementsByClassName("ips-nav-list")[0];
+  const toggle = document.getElementsByClassName("ips-nav-toggle")[0];
+  const links = document.getElementsByClassName("ips-nav-list")[0];
 
-    toggle.onclick = () => {
-      toggle.classList.toggle("ips-nav-activate");
-      links.classList.toggle("ips-show-nav");
-    };
+  toggle.onclick = () => {
+    toggle.classList.toggle("ips-nav-activate");
+    links.classList.toggle("ips-show-nav");
+  };
 
-    window.onclick = (e) => {
-      if(e.target.closest("header") != null)
-        return;
-      if(toggle.classList.contains("ips-nav-activate")){
-        toggle.classList.remove("ips-nav-activate");
-        links.classList.remove("ips-show-nav");
-      }
-    };
-  }
+  window.onclick = (e) => {
+    if(e.target.closest("header") != null)
+      return;
+    if(toggle.classList.contains("ips-nav-activate")){
+      toggle.classList.remove("ips-nav-activate");
+      links.classList.remove("ips-show-nav");
+    }
+  };
 
   // SLIDESHOW
   class Slider {

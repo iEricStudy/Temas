@@ -6,16 +6,21 @@
         "Info": "Info"
       },
       "Bloques": {
-        "Header": {
-
+        "ips-block-0":{
+          "type": "ips-slideshow"
         },
-        "ips-slideshow":{
-          "type": "ips-slideshow",
-          "datos": {
-            
-          }
+        "ips-block-1":{
+          "type": "ips-image-text"
+        },
+        "ips-block-2":{
+          "type": "ips-simple-text"
+        },
+        "ips-block-3":{
+          "type": "ips-product-list"
+        },
+        "ips-block-4": {
+          "type": "ips-image-group"
         }
-
       }
     }
   }
