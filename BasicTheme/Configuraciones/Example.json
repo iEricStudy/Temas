@@ -14,17 +14,17 @@
           "path": "Bloques\\ips-slideshow\\ips-slideshow",
           "content": {
             "ips-slide-item-0": {
-              "image": "../Recursos/img1.jpg",
+              "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
               "text": "Categoria 1",
               "overlay_color": "rgba(0,0,0,0.5)"
             },
             "ips-slide-item-1": {
-              "image": "../Recursos/img1.jpg",
+              "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
               "text": "Categoria 2",
               "overlay_color": "rgba(0,0,0,0.5)"
             },
             "ips-slide-item-2": {
-              "image": "../Recursos/img1.jpg",
+              "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
               "text": "Categoria 3",
               "overlay_color": "rgba(0,0,0,0.5)"
             }
@@ -60,7 +60,7 @@
               "id": "image",
               "type": "input file",
               "label": "Imagen",
-              "defaul": "../Recursos/info.png"
+              "defaul": "http://127.0.0.1:8887/Recursos/Imagenes/info.png"
             },
             "title": {
               "id": "title",
@@ -116,13 +116,13 @@
               "label": "Productos",
               "default": {
                 "ips-product-item-0": {
-                  "image": "../Recursos/img1.jpg",
+                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
                   "name": "Producto",
                   "details": "Detalle Producto",
                   "price": 100
                 },
                 "ips-product-item-1": {
-                  "image": "../Recursos/img2.jpg",
+                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg",
                   "name": "Producto",
                   "details": "Detalle Producto",
                   "price": 200
@@ -140,7 +140,7 @@
                 "id": "image",
                 "type": "file input",
                 "label": "Imagen",
-                "default": "../Recursos/img1.jpg"
+                "default": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
               },
               "name": {
                 "id": "name",
@@ -179,11 +179,11 @@
               "label": "Imagenes",
               "default": {
                 "ips-image-item-0": {
-                  "img": "../Recursos/img1.jpg",
+                  "img": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
                   "title": ""
                 },
                 "ips-image-item-1": {
-                  "img": "../Recursos/img2.jpg",
+                  "img": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg",
                   "title": ""
                 }
               }
@@ -199,7 +199,7 @@
                 "id": "img",
                 "type": "input file",
                 "label": "Imagen",
-                "default": "../Recursos/img1.jpg"
+                "default": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
               },
               "title": {
                 "id": "title",
