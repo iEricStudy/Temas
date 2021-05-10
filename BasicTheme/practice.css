@@ -688,10 +688,6 @@ header{
         flex: 0 0 100%;
       }
 
-      .ips-product-item .ips-product-details .ips-price{
-
-      }
-
       .ips-product-item .ips-product-details .ips-price .ips-price-before{
         color: var(--clr-grey-4);
         text-decoration: line-through;

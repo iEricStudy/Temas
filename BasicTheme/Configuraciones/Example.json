@@ -39,7 +39,8 @@
             "auto-scroll": {
               "id": "AutoScroll",
               "type": "checkBox",
-              "label": "Slide automatico"
+              "label": "Slide automatico",
+              "default": ""
             }
           }
         },
@@ -50,7 +51,7 @@
           "path": "Bloques\\ips-image-text\\ips-image-text",
           "content": {
             "image": "",
-            "title": "",
+            "title": "Prueba",
             "text": "",
             "btn-label": "",
             "btn-link": ""
@@ -60,7 +61,7 @@
               "id": "image",
               "type": "input file",
               "label": "Imagen",
-              "defaul": "http://127.0.0.1:8887/Recursos/Imagenes/info.png"
+              "default": "http://127.0.0.1:8887/Recursos/Imagenes/img2.png"
             },
             "title": {
               "id": "title",
@@ -169,7 +170,7 @@
           "type": "ips-image-group",
           "path": "Bloques\\ips-image-group\\ips-image-group",
           "content": {
-            "images": {},
+            "ips-image": {},
             "title": ""
           },
           "config": {
@@ -213,5 +214,7 @@
       }
     }
   },
-  "estilo": {}
+  "estilo": {
+    "path": ""
+  }
 }

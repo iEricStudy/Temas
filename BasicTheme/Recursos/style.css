@@ -6,21 +6,21 @@
 :root{
   /* COLORS */
   /* Dark shades of primary color */
-  --clr-primary-0: #011f15;
-  --clr-primary-1: #023524;
-  --clr-primary-1: #01412d;
-  --clr-primary-2: #036145;
-  --clr-primary-3: #068b64;
-  --clr-primary-4: #09a879;
+  --clr-primary-0: #131313;
+  --clr-primary-1: #242424;
+  --clr-primary-1: #353535;
+  --clr-primary-2: #474747;
+  --clr-primary-3: #5a5a5a;
+  --clr-primary-4: #6e6e6e;
   /* Main primary color */
-  --clr-primary-5: #0fc690;
+  --clr-primary-5: #838383;
   /* Light shades of primary color */
-  --clr-primary-6: #25ecb0;
-  --clr-primary-7: #40fcc3;
-  --clr-primary-8: #80ffd9;
-  --clr-primary-9: #b7ffe9;
-  --clr-primary-10: #e1fff6;
-  --clr-primary-11: #edf5f3;
+  --clr-primary-6: #999999;
+  --clr-primary-7: #adadad;
+  --clr-primary-8: #cccbcb;
+  --clr-primary-9: #e2e2e2;
+  --clr-primary-10: #f1f1f1;
+  --clr-primary-11: #ffffff;
   /* Grays */
   --clr-grey-1: #272c2b;
   --clr-grey-2: #3e4443;
@@ -423,10 +423,11 @@ header{
     }
 
     @media screen and (min-width: 600px){
-      .block .block-content:not(.slideshow):not(.block-content){
+      .ips-block .ips-block-content:not(.ips-slideshow):not(.ips-block-content){
         padding: 50px;
       }
     }
+
 
 /**** SLIDE *****/
 
@@ -586,28 +587,22 @@ header{
   flex-direction: column;
 }
 
-  @media screen and (min-width: 1000px){
-    .image-text .text .content{
+  @media screen and (min-width: 900px) {
+    .ips-image-text .ips-text .ips-content{
       width: 80%;
     }
   }
 
-  .image-text .image{
+  .ips-image-text .ips-image{
     padding: 10px;
     flex: 50%;
   }
 
-  @media screen and (min-width: 830px){
-    .image-text:not(.comparison-item) .image img{
+  @media screen and (min-width: 730px){
+    .ips-image-text:not(.ips-comparison-item) .ips-image img{
       margin: auto;
       width: 50%;
       min-width: 450px;
-    }
-  }
-
-  @media screen and (min-width: 1300px){
-    .image-text:not(.comparison-item) .image img{
-      width: 90%;
     }
   }
 
@@ -619,14 +614,14 @@ header{
   background-color: var(--clr-light-4);
 }
 
-  @media screen and (min-width: 700px){
-    .simple-text .text .content{
+  @media screen and (min-width: 600px){
+    .ips-simple-text .ips-text .ips-content{
       width: 80%;
     }
   }
 
-  @media screen and (min-width: 1000px){
-    .simple-text .text .content{
+  @media screen and (min-width: 900px){
+    .ips-simple-text .ips-text .ips-content{
       width: 70%;
     }
   }
@@ -648,17 +643,18 @@ header{
       background-position: center;
     }
 
-    @media screen and (min-width: 700px){
-      .simple-text .text .content{
-        width: 80%;
-      }
+  @media screen and (min-width: 750px){
+    .ips-image-group .ips-image{
+      flex: 50%;
+      margin: 0;
     }
-  
-    @media screen and (min-width: 1000px){
-      .simple-text .text .content{
-        width: 70%;
-      }
+  }
+
+  @media screen and (min-width: 950px){
+    .ips-image-group.ips-image{
+      flex: 20%;
     }
+  }
 
 /**** COMPARISON GROUP ****/
 
@@ -672,16 +668,15 @@ header{
     flex: 0 0 100%;
   }
 
-  @media screen and (min-width: 850px){
-    .image-group .image{
-      flex: 50%;
-      margin: 0;
+  @media screen and (min-width: 700px){
+    .ips-comparison-group .ips-items-group .ips-comparison-item{
+      flex: 0 0 50%;
     }
   }
 
-  @media screen and (min-width: 1050px){
-    .image-group .image{
-      flex: 20%;
+  @media screen and (min-width: 950px){
+    .ips-comparison-group .ips-items-group .ips-comparison-item{
+      flex: 0 0 30%;
     }
   }
 
@@ -720,20 +715,20 @@ header{
       font-weight: bold;
     }
 
-  @media screen and (min-width: 800px){
-    .items-group .product-item{
+  @media screen and (min-width: 700px){
+    .ips-items-group .ips-product-item{
       flex: 0 0 50%;
     }
   }
 
-  @media screen and (min-width: 1000px){
-    .items-group .product-item{
+  @media screen and (min-width: 900px){
+    .ips-items-group .ips-product-item{
       flex: 0 0 30%;
     }
   }
 
-  @media screen and (min-width: 1200px){
-    .items-group .product-item{
+  @media screen and (min-width: 1100px){
+    .ips-items-group .ips-product-item{
       flex: 0 0 25%;
     }
   }
@@ -775,14 +770,14 @@ header{
       opacity: 1;
     }
 
-    @media screen and (min-width: 850PX){
-      .collection-group .items-group > * {
-        flex: 0 0 50%;
-      }
+  @media screen and (min-width: 750px){
+    .ips-collection-group .ips-items-group > * {
+      flex: 0 0 50%;
     }
+  }
 
-  @media screen and (min-width: 1300px){
-    .collection-group .items-group > * {
+  @media screen and (min-width: 1200px){
+    .ips-collection-group .ips-items-group > * {
       flex: 0 0 25%;
     }
   }

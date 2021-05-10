@@ -1,7 +1,3 @@
-const slides;
-const counter;
-const timer;
-
 window.addEventListener('load', init());
 
 function init() {
