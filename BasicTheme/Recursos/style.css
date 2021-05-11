@@ -13,7 +13,7 @@
   --clr-primary-3: #5a5a5a;
   --clr-primary-4: #6e6e6e;
   /* Main primary color */
-  --clr-primary-5: #838383;
+  --clr-primary-5: #727272;
   /* Light shades of primary color */
   --clr-primary-6: #999999;
   --clr-primary-7: #adadad;
@@ -401,6 +401,11 @@ header{
 
 /***** BLOCKS *****/
 
+#ips-main-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .ips-block{
   display: flex;
   flex-direction: column;
@@ -638,7 +643,7 @@ header{
     margin: 0px 40px;
   }
 
-    .ips-image-group .ips-image .ips-image-item{
+    .ips-image-group .ips-image .ips-image-container{
       height: 500px;
       background-position: center;
     }

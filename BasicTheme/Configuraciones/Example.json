@@ -13,28 +13,44 @@
           "type": "ips-slideshow",
           "path": "Bloques\\ips-slideshow\\ips-slideshow",
           "content": {
-            "ips-slide-item-0": {
-              "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
-              "text": "Categoria 1",
-              "overlay_color": "rgba(0,0,0,0.5)"
-            },
-            "ips-slide-item-1": {
-              "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
-              "text": "Categoria 2",
-              "overlay_color": "rgba(0,0,0,0.5)"
-            },
-            "ips-slide-item-2": {
-              "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
-              "text": "Categoria 3",
-              "overlay_color": "rgba(0,0,0,0.5)"
+            "slides": {
+              "ips-slide-item-0": {
+                "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner2.png",
+                "title": "Cafe",
+                "text": "",
+                "btn-label": "Ver mas",
+                "btn-link": "#"
+              },
+              "ips-slide-item-1": {
+                "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner1.jpg",
+                "title": "Cafeina",
+                "text": "",
+                "btn-label": "Ver mas",
+                "btn-link": "#"
+              }
             }
           },
           "config": {
             "slides": {
-              "id": "SlidesSelector",
+              "id": "slides",
               "type": "item-selector",
-              "label": "slides",
-              "default": {}
+              "label": "SlidesSelector",
+              "default": {
+                "ips-slide-item-0": {
+                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner1.jpg",
+                  "title": "Categoria 1",
+                  "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
+                  "btn-label": "Ver",
+                  "btn-link": "#"
+                },
+                "ips-slide-item-1": {
+                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner2.png",
+                  "title": "Categoria 1",
+                  "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
+                  "btn-label": "Ver",
+                  "btn-link": "#"
+                }
+              }
             },
             "auto-scroll": {
               "id": "AutoScroll",
@@ -52,16 +68,14 @@
           "content": {
             "image": "",
             "title": "Prueba",
-            "text": "",
-            "btn-label": "",
-            "btn-link": ""
+            "text": ""
           },
           "config": {
             "image": {
               "id": "image",
               "type": "input file",
               "label": "Imagen",
-              "default": "http://127.0.0.1:8887/Recursos/Imagenes/img2.png"
+              "default": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg"
             },
             "title": {
               "id": "title",
@@ -127,6 +141,18 @@
                   "name": "Producto",
                   "details": "Detalle Producto",
                   "price": 200
+                },
+                "ips-product-item-2": {
+                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/img3.jpg",
+                  "name": "Producto",
+                  "details": "Detalle Producto",
+                  "price": 200
+                },
+                "ips-product-item-3": {
+                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/img4.jpg",
+                  "name": "Producto",
+                  "details": "Detalle Producto",
+                  "price": 200
                 }
               }
             },
@@ -170,7 +196,7 @@
           "type": "ips-image-group",
           "path": "Bloques\\ips-image-group\\ips-image-group",
           "content": {
-            "ips-image": {},
+            "images": {},
             "title": ""
           },
           "config": {
