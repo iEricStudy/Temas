@@ -5,7 +5,9 @@
     "Home": {
       "name": "Portada",
       "path": "Plantilla\\portada",
-      "diseno": "Disenos\\sitio",
+      "diseno": {
+        
+      },
       "Bloques": {
         "ips-block-0": {
           "id": "",
@@ -68,7 +70,7 @@
           "content": {
             "image": "",
             "title": "Prueba",
-            "text": ""
+            "text": "Esto es un texto de ejemplo para llenar algo y realmente no se porque se lleno tan corto"
           },
           "config": {
             "image": {
