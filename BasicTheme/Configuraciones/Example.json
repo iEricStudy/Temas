@@ -1,248 +1,402 @@
 {
   "General": "Informacion",
-  "path": "http://127.0.0.1:8887/",
-  "Paginas": {
+  "Path": "http://127.0.0.1:8887/",
+  "Pages": {
     "Home": {
-      "name": "Portada",
-      "path": "Plantilla\\portada",
-      "diseno": {
-        
+      "ID": "Home",
+      "Name": "HomePage",
+      "Layout": {
+        "Name": "Site",
+        "Path": "Disenos/sitio",
+        "Sections": {
+          "ips-site-footer": {
+            "ID": "ips-footer",
+            "Name": "Footer",
+            "Type": "ips-footer",
+            "Path": "Secciones/ips-footer/ips-footer",
+            "Blocks": {
+              "ips-block-0": {
+                "ID": "ips-block-0",
+                "Name": "Menu",
+                "Type": "ips-footer-nav-list",
+                "Path": "Bloques/ips-footer/ips-footer",
+                "Content": {
+                  "title": "Nosotros",
+                  "links": {
+                    "SobreNosotros": {
+                      "link-name": "Sobre Nosotros",
+                      "link-value": "https://www.google.com/"
+                    },
+                    "NuestraHistoria": {
+                      "link-name": "Nuestra Historia",
+                      "link-value": "#"
+                    },
+                    "Contactos": {
+                      "link-name": "Sobre Nosotros",
+                      "link-value": "#"
+                    }
+                  }
+                },
+                "Config": {
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Menu"
+                  },
+                  "links": {
+                    "ID": "links",
+                    "Type": "item-selector",
+                    "Label": "Enlaces",
+                    "DefaultContent": {
+                      "link1": {
+                        "link-name": "link1",
+                        "link-value": "#"
+                      },
+                      "link2": {
+                        "link-name": "link2",
+                        "link-value": "#"
+                      },
+                      "link3": {
+                        "link-name": "link3",
+                        "link-value": "#"
+                      }
+                    }
+                  }
+                }
+              },
+              "ips-block-1": {
+                "ID": "ips-block-1",
+                "Name": "Social",
+                "Type": "ips-footer-social-list",
+                "Path": "Bloques/ips-footer/ips-footer",
+                "Content": {
+                  "title": "",
+                  "links": {}
+                },
+                "Config": {
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Social"
+                  },
+                  "links": {
+                    "ID": "links",
+                    "Type": "item-selector",
+                    "Label": "Enlaces",
+                    "DefaultContent": {
+                      "facebook": {
+                        "link-name": "facebook",
+                        "link-value": "#"
+                      },
+                      "instagram": {
+                        "link-name": "instagram",
+                        "link-value": "#"
+                      },
+                      "twitter": {
+                        "link-name": "twitter",
+                        "link-value": "#"
+                      }
+                    }
+                  }
+                }
+              },
+              "ips-block-2": {
+                "ID": "ips-block-2",
+                "Name": "Paragraph",
+                "Type": "ips-footer-text",
+                "Path": "Bloques/ips-footer/ips-footer",
+                "Content": {
+                  "title": "Mi empresa",
+                  "text": "Cualquier cosa que quieras saber sobre nosotros solo escribenos."
+                },
+                "Config": {
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Titulo"
+                  },
+                  "text": {
+                    "ID": "text",
+                    "Type": "text",
+                    "Label": "Texto",
+                    "DefaultContent": "Cualquier texto para que este apartado no se quede vacio"
+                  }
+                }
+              },
+              "ips-block-3": {
+                "ID": "ips-block-3",
+                "Name": "Newsletter",
+                "Type": "ips-footer-newsletter",
+                "Path": "Bloques/ips-footer/ips-footer",
+                "Content": {
+                  "title": "",
+                  "text": "",
+                  "btn-label": ""
+                },
+                "Config": {
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Noticias"
+                  },
+                  "text": {
+                    "ID": "text",
+                    "Type": "text",
+                    "Label": "Texto",
+                    "DefaultContent": "Suscribete para saber todas las noticias al momento!"
+                  },
+                  "btn-label": {
+                    "ID": "btn-label",
+                    "Type": "text",
+                    "Label": "Etiqueta",
+                    "DefaultContent": "Suscribete"
+                  }
+                }
+              }
+            }
+          }
+        } 
       },
-      "Bloques": {
-        "ips-block-0": {
-          "id": "",
-          "block-name": "Slideshow",
-          "type": "ips-slideshow",
-          "path": "Bloques\\ips-slideshow\\ips-slideshow",
-          "content": {
-            "slides": {
-              "ips-slide-item-0": {
-                "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner2.png",
-                "title": "Cafe",
-                "text": "",
-                "btn-label": "Ver mas",
-                "btn-link": "#"
-              },
-              "ips-slide-item-1": {
-                "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner1.jpg",
-                "title": "Cafeina",
-                "text": "",
-                "btn-label": "Ver mas",
-                "btn-link": "#"
-              }
-            }
-          },
-          "config": {
-            "slides": {
-              "id": "slides",
-              "type": "item-selector",
-              "label": "SlidesSelector",
-              "default": {
+      "Template":{
+        "Name": "Portada",
+        "Path": "Plantilla/portada",
+        "Blocks": {
+          "ips-block-0": {
+            "ID": "ips-block-0",
+            "Name": "Slideshow",
+            "Type": "ips-slideshow",
+            "Path": "Bloques/ips-slideshow/ips-slideshow",
+            "Content": {
+              "slides": {
                 "ips-slide-item-0": {
-                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner1.jpg",
-                  "title": "Categoria 1",
-                  "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
-                  "btn-label": "Ver",
-                  "btn-link": "#"
-                },
-                "ips-slide-item-1": {
                   "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner2.png",
-                  "title": "Categoria 1",
-                  "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
-                  "btn-label": "Ver",
+                  "title": "Cafe",
+                  "text": "",
+                  "btn-label": "Ver mas",
+                  "btn-link": "#"
+                },
+                "ips-slide-item-2": {
+                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner1.jpg",
+                  "title": "Cafeina",
+                  "text": "",
+                  "btn-label": "Ver mas",
                   "btn-link": "#"
                 }
               }
             },
-            "auto-scroll": {
-              "id": "AutoScroll",
-              "type": "checkBox",
-              "label": "Slide automatico",
-              "default": ""
-            }
-          }
-        },
-        "ips-block-1": {
-          "id": "",
-          "block-name": "Image with Text",
-          "type": "ips-image-text",
-          "path": "Bloques\\ips-image-text\\ips-image-text",
-          "content": {
-            "image": "",
-            "title": "Prueba",
-            "text": "Esto es un texto de ejemplo para llenar algo y realmente no se porque se lleno tan corto"
-          },
-          "config": {
-            "image": {
-              "id": "image",
-              "type": "input file",
-              "label": "Imagen",
-              "default": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg"
-            },
-            "title": {
-              "id": "title",
-              "type": "text",
-              "label": "Titulo",
-              "default": "Texto con Imagen"
-            },
-            "text": {
-              "id": "text",
-              "type": "richtext",
-              "label": "Texto",
-              "default": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
-            }
-          }
-        },
-        "ips-block-2": {
-          "id": "",
-          "block-name": "Simple Text",
-          "type": "ips-simple-text",
-          "path": "Bloques\\ips-simple-text\\ips-simple-text",
-          "content": {
-            "title": "",
-            "text": ""
-          },
-          "config": {
-            "title": {
-              "id": "title",
-              "type": "text",
-              "label": "Titulo",
-              "default": "Information"
-            },
-            "text": {
-              "id": "text",
-              "type": "textarea",
-              "label": "Texto",
-              "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem fugit nihil sed, ipsum reiciendis blanditiis, nisi nobis magni, nulla fugiat dolore? Totam, odit? Eius delectus dolorem atque cupiditate pariatur velit iure ipsum natus at minus inventore autem accusamus quod, repellat asperiores architecto iusto sequi similique doloremque expedita. Quod libero ratione temporibus unde provident delectus voluptates amet, porro accusamus placeat modi enim totam iste laborum possimus ducimus quidem nobis sapiente ipsum corporis accusantium? Qui sint iste cumque eum molestias eius fugiat at eos voluptatibus inventore! Facere temporibus ipsa ipsum neque repudiandae recusandae asperiores natus illo accusantium, est iure quaerat quibusdam!"
-            }
-          }
-        },
-        "ips-block-3": {
-          "id": "",
-          "block-name": "Product List",
-          "type": "ips-product-list",
-          "path": "Bloques\\ips-product-list\\ips-product-list",
-          "content": {
-            "products": {},
-            "title": ""
-          },
-          "config": {
-            "products": {
-              "id": "products",
-              "type": "item-selector",
-              "label": "Productos",
-              "default": {
-                "ips-product-item-0": {
-                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
-                  "name": "Producto",
-                  "details": "Detalle Producto",
-                  "price": 100
-                },
-                "ips-product-item-1": {
-                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg",
-                  "name": "Producto",
-                  "details": "Detalle Producto",
-                  "price": 200
-                },
-                "ips-product-item-2": {
-                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/img3.jpg",
-                  "name": "Producto",
-                  "details": "Detalle Producto",
-                  "price": 200
-                },
-                "ips-product-item-3": {
-                  "image": "http://127.0.0.1:8887/Recursos/Imagenes/img4.jpg",
-                  "name": "Producto",
-                  "details": "Detalle Producto",
-                  "price": 200
+            "Config": {
+              "slides": {
+                "ID": "slides",
+                "Type": "item-selector",
+                "Label": "SlidesSelector",
+                "DefaultContent": {
+                  "ips-slide-item-0": {
+                    "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner1.jpg",
+                    "title": "Categoria 1",
+                    "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
+                    "btn-label": "Ver",
+                    "btn-link": "#"
+                  },
+                  "ips-slide-item-1": {
+                    "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner2.png",
+                    "title": "Categoria 1",
+                    "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
+                    "btn-label": "Ver",
+                    "btn-link": "#"
+                  }
                 }
+              },
+              "auto-scroll": {
+                "ID": "AutoScroll",
+                "Type": "checkBox",
+                "Label": "Slide automatico",
+                "DefaultContent": ""
               }
+            }
+          },
+          "ips-block-1": {
+            "ID": "ips-block-1",
+            "Name": "Image with Text",
+            "Type": "ips-image-text",
+            "Path": "Bloques/ips-image-text/ips-image-text",
+            "Content": {
+              "image": "",
+              "title": "Prueba",
+              "text": "Esto es un texto de ejemplo para llenar algo y realmente no se porque se lleno tan corto"
             },
-            "title": {
-              "id": "title",
-              "type": "text",
-              "label": "Titulo",
-              "default": "Product List"
-            },
-            "items-config": {
+            "Config": {
               "image": {
-                "id": "image",
-                "type": "file input",
-                "label": "Imagen",
-                "default": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
-              },
-              "name": {
-                "id": "name",
-                "type": "text",
-                "label": "Nomre",
-                "default": "Producto"
-              },
-              "details": {
-                "id": "details",
-                "type": "text",
-                "label": "Detalles",
-                "default": "Detalles Producto"
-              },
-              "price": {
-                "id": "price",
-                "type": "number",
-                "label": "Precio",
-                "default": 100
-              }
-            }
-          }
-        },
-        "ips-block-4": {
-          "id": "",
-          "block-name": "Image Group",
-          "type": "ips-image-group",
-          "path": "Bloques\\ips-image-group\\ips-image-group",
-          "content": {
-            "images": {},
-            "title": ""
-          },
-          "config": {
-            "images": {
-              "id": "image",
-              "type": "item-selector",
-              "label": "Imagenes",
-              "default": {
-                "ips-image-item-0": {
-                  "img": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
-                  "title": ""
-                },
-                "ips-image-item-1": {
-                  "img": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg",
-                  "title": ""
-                }
-              }
-            },
-            "title": {
-              "id": "title",
-              "type": "text",
-              "label": "Titulo",
-              "Default": ""
-            },
-            "items-config": {
-              "img": {
-                "id": "img",
-                "type": "input file",
-                "label": "Imagen",
-                "default": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
+                "ID": "image",
+                "Type": "input file",
+                "Label": "Imagen",
+                "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg"
               },
               "title": {
-                "id": "title",
-                "type": "text",
-                "label": "Titulo",
-                "default": ""
+                "ID": "title",
+                "Type": "text",
+                "Label": "Titulo",
+                "DefaultContent": "Texto con Imagen"
+              },
+              "text": {
+                "ID": "text",
+                "Type": "richtext",
+                "Label": "Texto",
+                "DefaultContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
+              }
+            }
+          },
+          "ips-block-2": {
+            "ID": "ips-block-2",
+            "Name": "Simple Text",
+            "Type": "ips-simple-text",
+            "Path": "Bloques/ips-simple-text/ips-simple-text",
+            "Content": {
+              "title": "",
+              "text": ""
+            },
+            "Config": {
+              "title": {
+                "ID": "title",
+                "Type": "text",
+                "Label": "Titulo",
+                "DefaultContent": "Information"
+              },
+              "text": {
+                "ID": "text",
+                "Type": "textarea",
+                "Label": "Texto",
+                "DefaultContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem fugit nihil sed, ipsum reiciendis blanditiis, nisi nobis magni, nulla fugiat dolore? Totam, odit? Eius delectus dolorem atque cupiditate pariatur velit iure ipsum natus at minus inventore autem accusamus quod, repellat asperiores architecto iusto sequi similique doloremque expedita. Quod libero ratione temporibus unde provident delectus voluptates amet, porro accusamus placeat modi enim totam iste laborum possimus ducimus quidem nobis sapiente ipsum corporis accusantium? Qui sint iste cumque eum molestias eius fugiat at eos voluptatibus inventore! Facere temporibus ipsa ipsum neque repudiandae recusandae asperiores natus illo accusantium, est iure quaerat quibusdam!"
+              }
+            }
+          },
+          "ips-block-3": {
+            "ID": "ips-block-3",
+            "Name": "Product List",
+            "Type": "ips-product-list",
+            "Path": "Bloques/ips-product-list/ips-product-list",
+            "Content": {
+              "products": {},
+              "title": ""
+            },
+            "Config": {
+              "products": {
+                "ID": "products",
+                "Type": "item-selector",
+                "Label": "Productos",
+                "DefaultContent": {
+                  "ips-product-item-0": {
+                    "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
+                    "name": "Producto",
+                    "details": "Detalle Producto",
+                    "price": 100
+                  },
+                  "ips-product-item-1": {
+                    "image": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg",
+                    "name": "Producto",
+                    "details": "Detalle Producto",
+                    "price": 200
+                  },
+                  "ips-product-item-2": {
+                    "image": "http://127.0.0.1:8887/Recursos/Imagenes/img3.jpg",
+                    "name": "Producto",
+                    "details": "Detalle Producto",
+                    "price": 200
+                  },
+                  "ips-product-item-3": {
+                    "image": "http://127.0.0.1:8887/Recursos/Imagenes/img4.jpg",
+                    "name": "Producto",
+                    "details": "Detalle Producto",
+                    "price": 200
+                  }
+                }
+              },
+              "title": {
+                "ID": "title",
+                "Type": "text",
+                "Label": "Titulo",
+                "DefaultContent": "Product List"
+              },
+              "items-config": {
+                "image": {
+                  "ID": "image",
+                  "Type": "file input",
+                  "Label": "Imagen",
+                  "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
+                },
+                "name": {
+                  "ID": "name",
+                  "Type": "text",
+                  "Label": "Nomre",
+                  "DefaultContent": "Producto"
+                },
+                "details": {
+                  "ID": "details",
+                  "Type": "text",
+                  "Label": "Detalles",
+                  "DefaultContent": "Detalles Producto"
+                },
+                "price": {
+                  "ID": "price",
+                  "Type": "number",
+                  "Label": "Precio",
+                  "DefaultContent": 100
+                }
+              }
+            }
+          },
+          "ips-block-4": {
+            "ID": "ips-block-4",
+            "Name": "Image Group",
+            "Type": "ips-image-group",
+            "Path": "Bloques/ips-image-group/ips-image-group",
+            "Content": {
+              "images": {},
+              "title": ""
+            },
+            "Config": {
+              "images": {
+                "ID": "image",
+                "Type": "item-selector",
+                "Label": "Imagenes",
+                "DefaultContent": {
+                  "ips-image-item-0": {
+                    "img": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
+                    "title": ""
+                  },
+                  "ips-image-item-1": {
+                    "img": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg",
+                    "title": ""
+                  }
+                }
+              },
+              "title": {
+                "ID": "title",
+                "Type": "text",
+                "Label": "Titulo",
+                "DefaultContent": ""
+              },
+              "items-config": {
+                "img": {
+                  "ID": "img",
+                  "Type": "input file",
+                  "Label": "Imagen",
+                  "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
+                },
+                "title": {
+                  "ID": "title",
+                  "Type": "text",
+                  "Label": "Titulo",
+                  "DefaultContent": ""
+                }
               }
             }
           }
         }
       }
     }
-  },
-  "estilo": {
-    "path": ""
   }
 }

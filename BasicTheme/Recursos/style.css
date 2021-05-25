@@ -332,17 +332,22 @@ header{
     }
 
       .ips-footer .ips-footer-top .ips-footer-item h3{
-        font-size: var(--fs-title-1);
+        font-size: var(--fs-text-3);
         margin-bottom: 10px;
       }
 
-    .ips-footer .ips-footer-top .ips-footer-nav-list a{
+    .ips-footer .ips-footer-top .ips-footer-nav-list .nav-item,
+    .ips-footer .ips-footer-top .ips-footer-social-list .nav-item{
       align-self: flex-start;
-      color: var(--clr-grey-9);
       margin: 5px 0;
     }
 
-    .ips-footer .ips-footer-top .ips-footer-nav-list i{
+    .ips-footer .ips-footer-top .ips-footer-nav-list a,
+    .ips-footer .ips-footer-top .ips-footer-social-list a{
+      color: var(--clr-grey-9);
+    }    
+
+    .ips-footer .ips-footer-top .ips-footer-social-list i{
       vertical-align: middle;
       color: var(--clr-primary-7);
       font-size: 2rem;
@@ -362,7 +367,8 @@ header{
   }
 
   @media screen and (min-width: 600px){
-    .ips-footer .ips-footer-top .ips-footer-nav-list{
+    .ips-footer .ips-footer-top .ips-footer-nav-list,
+    .ips-footer .ips-footer-top .ips-footer-social-list{
       flex: 50%;
     }
     .ips-footer .ips-footer-top .ips-footer-newsletter .ips-btn{
@@ -371,7 +377,8 @@ header{
   }
 
   @media screen and (min-width: 900px){
-    .ips-footer .ips-footer-top .ips-footer-nav-list{
+    .ips-footer .ips-footer-top .ips-footer-nav-list,
+    .ips-footer .ips-footer-top .ips-footer-social-list{
       flex: 20%;
     }
 
@@ -385,7 +392,8 @@ header{
   }
 
   @media screen and (min-width: 1030px){
-    .ips-footer .ips-footer-top .ips-footer-nav-list{
+    .ips-footer .ips-footer-top .ips-footer-nav-list,
+    .ips-footer .ips-footer-top .ips-footer-social-list{
       flex: 20%;
     }
     .ips-footer .ips-footer-top .ips-footer-text,
@@ -406,14 +414,14 @@ header{
   flex-direction: column;
 }
 
-.ips-block{
+#ips-main-container .ips-block{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-  .ips-block .ips-block-content{
+  #ips-main-container .ips-block .ips-block-content{
     width: 100%;
     height: 100%;
     position: relative;
@@ -423,12 +431,12 @@ header{
     justify-content: center;
   }
 
-    .ips-block .ips-block-content:not(.ips-slideshow){
+    #ips-main-container .ips-block .ips-block-content:not(.ips-slideshow){
       padding: 50px 0;
     }
 
     @media screen and (min-width: 600px){
-      .ips-block .ips-block-content:not(.ips-slideshow):not(.ips-block-content){
+      #ips-main-container .ips-block .ips-block-content:not(.ips-slideshow):not(.ips-block-content){
         padding: 50px;
       }
     }
@@ -633,8 +641,8 @@ header{
 
 /**** IMAGE GROUP *****/
 .ips-block-content.ips-image-group{
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
 }
 
   .ips-image-group .ips-image{
