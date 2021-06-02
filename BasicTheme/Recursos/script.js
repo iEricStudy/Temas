@@ -1,7 +1,13 @@
-window.addEventListener('load', init());
+//STOP SCRIPT
+const bc = new BroadcastChannel("ScriptControl");
+let flag = true;
+bc.addEventListener("message", e => {
+  if(e.data == "stop"){
+    flag = false;
+  }
+});
 
 function init(){
-
   //GET HEIGHT
   function setScreenHeight(){
     var screenHeight;
@@ -15,23 +21,25 @@ function init(){
   window.onresize = setScreenHeight;
   setScreenHeight();
 
-  // HEADER
-  // const toggle = document.getElementsByClassName("ips-nav-toggle")[0];
-  // const links = document.getElementsByClassName("ips-nav-list")[0];
+  //HEADER
+  const toggle = document.getElementsByClassName("ips-nav-toggle")[0];
+  const links = document.getElementsByClassName("ips-nav-list")[0];
 
-  // toggle.onclick = () => {
-  //   toggle.classList.toggle("ips-nav-activate");
-  //   links.classList.toggle("ips-show-nav");
-  // };
+  if(toggle){
+    toggle.onclick = () => {
+      toggle.classList.toggle("ips-nav-activate");
+      links.classList.toggle("ips-show-nav");
+    };
 
-  // window.onclick = (e) => {
-  //   if(e.target.closest("header") != null)
-  //     return;
-  //   if(toggle.classList.contains("ips-nav-activate")){
-  //     toggle.classList.remove("ips-nav-activate");
-  //     links.classList.remove("ips-show-nav");
-  //   }
-  // };
+    window.onclick = (e) => {
+      if(e.target.closest("header") != null)
+        return;
+      if(toggle.classList.contains("ips-nav-activate")){
+        toggle.classList.remove("ips-nav-activate");
+        links.classList.remove("ips-show-nav");
+      }
+    };
+  }
 
   // SLIDESHOW
   class Slider {
@@ -92,9 +100,14 @@ function init(){
     const slideshow = document.querySelectorAll('.ips-slideshow');
 
     slideshow.forEach((sItem) => {
-      sItem.setAttribute("slideAction",new Slider(sItem));
+      if(sItem.getAttribute("slideAction") == null){
+        sItem.setAttribute("slideAction",new Slider(sItem));
+      }
     });
   }
   
-  loadSliders();
+  // loadSliders();
 }
+
+window.addEventListener('load', init, false);
+

@@ -9,6 +9,130 @@
         "Name": "Site",
         "Path": "Disenos/sitio",
         "Sections": {
+          "ips-site-header": {
+            "ID": "ips-header",
+            "Name": "Header",
+            "Type": "ips-header",
+            "Path": "Secciones/ips-header/ips-header",
+            "Blocks": {
+              "ips-block-0": {
+                "ID": "ips-block-0",
+                "Name": "Logo",
+                "Type": "ips-nav-header",
+                "Path": "Secciones/ips-header-ips-header",
+                "Content": {
+                  "logo": "",
+                  "link": ""
+                },
+                "Config": {
+                  "logo": {
+                    "ID": "logo",
+                    "Type": "text",
+                    "Label": "Logo",
+                    "DefaultContent": "Logo"
+                  },
+                  "link": {
+                    "ID": "link",
+                    "Type": "text",
+                    "Label": "Enlace",
+                    "DefaultContent": "#"
+                  }
+                }
+              },
+              "ips-block-1": {
+                "ID": "ips-block-1",
+                "Name": "Lista",
+                "Type": "ips-nav-list",
+                "Path": "Secciones/ips-header-ips-header",
+                "Content": {
+                  "links": {
+                    "Home": {
+                      "link-name": "Home",
+                      "link-value": "https://www.google.com/"
+                    },
+                    "About": {
+                      "link-name": "About",
+                      "link-value": "#"
+                    },
+                    "Service": {
+                      "link-name": "Service",
+                      "link-value": "#"
+                    },
+                    "Gallery": {
+                      "link-name": "Gallery",
+                      "link-value": "#"
+                    },
+                    "ContactUs": {
+                      "link-name": "Contact Us",
+                      "link-value": "#"
+                    }
+                  },
+                  "others": {
+                    "search": {
+                      "search-name": "Search",
+                      "search-value": "#"
+                    }
+                  }
+                },
+                "Config": {
+                  "links": {
+                    "ID": "links",
+                    "Type": "item-selector",
+                    "Label": "Enlaces",
+                    "DefaultContent": {
+                      "link1": {
+                        "link-name": "link1",
+                        "link-value": "#"
+                      },
+                      "link2": {
+                        "link-name": "link2",
+                        "link-value": "#"
+                      },
+                      "link3": {
+                        "link-name": "link3",
+                        "link-value": "#"
+                      }
+                    }
+                  },
+                  "others": {
+                    "ID": "others",
+                    "Type": "item-selector",
+                    "Label": "Otros Enlaces",
+                    "DefaultContent": {
+                      "search": {
+                        "search-name": "Search",
+                        "search-value": "#"
+                      }
+                    }
+                  }
+                }
+              },
+              "ips-block-2": {
+                "ID": "ips-block-2",
+                "Name": "Simple Text",
+                "Type": "ips-simple-text",
+                "Path": "Bloques/ips-simple-text/ips-simple-text",
+                "Content": {
+                  "title": "",
+                  "text": ""
+                },
+                "Config": {
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Information"
+                  },
+                  "text": {
+                    "ID": "text",
+                    "Type": "textarea",
+                    "Label": "Texto",
+                    "DefaultContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem fugit nihil sed, ipsum reiciendis blanditiis, nisi nobis magni, nulla fugiat dolore? Totam, odit? Eius delectus dolorem atque cupiditate pariatur velit iure ipsum natus at minus inventore autem accusamus quod, repellat asperiores architecto iusto sequi similique doloremque expedita. Quod libero ratione temporibus unde provident delectus voluptates amet, porro accusamus placeat modi enim totam iste laborum possimus ducimus quidem nobis sapiente ipsum corporis accusantium? Qui sint iste cumque eum molestias eius fugiat at eos voluptatibus inventore! Facere temporibus ipsa ipsum neque repudiandae recusandae asperiores natus illo accusantium, est iure quaerat quibusdam!"
+                  }
+                }
+              }
+            }
+          },
           "ips-site-footer": {
             "ID": "ips-footer",
             "Name": "Footer",
@@ -186,13 +310,14 @@
                   "btn-label": "Ver mas",
                   "btn-link": "#"
                 }
-              }
+              },
+              "auto-scroll": ""
             },
             "Config": {
               "slides": {
                 "ID": "slides",
                 "Type": "item-selector",
-                "Label": "SlidesSelector",
+                "Label": "Slides",
                 "DefaultContent": {
                   "ips-slide-item-0": {
                     "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner1.jpg",
@@ -211,10 +336,42 @@
                 }
               },
               "auto-scroll": {
-                "ID": "AutoScroll",
+                "ID": "auto-scroll",
                 "Type": "checkBox",
                 "Label": "Slide automatico",
-                "DefaultContent": ""
+                "DefaultContent": "true"
+              },
+              "slides-items-config": {
+                "image": {
+                  "ID": "image",
+                  "Type": "file",
+                  "Label": "Imagen",
+                  "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/banner2.png"
+                },
+                "title": {
+                  "ID": "title",
+                  "Type": "text",
+                  "Label": "Titulo",
+                  "DefaultContent": "Cafe"
+                },
+                "text": {
+                  "ID": "text",
+                  "Type": "text",
+                  "Label": "Texto",
+                  "DefaultContent": ""
+                },
+                "btn-label": {
+                  "ID": "btn-label",
+                  "Type": "text",
+                  "Label": "Etiqueta del Boton",
+                  "DefaultContent": ""
+                },
+                "btn-link": {
+                  "ID": "btn-link",
+                  "Type": "text",
+                  "Label": "Link",
+                  "DefaultContent": ""                  
+                }
               }
             }
           },
@@ -231,7 +388,7 @@
             "Config": {
               "image": {
                 "ID": "image",
-                "Type": "input file",
+                "Type": "file",
                 "Label": "Imagen",
                 "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg"
               },
@@ -320,12 +477,12 @@
                 "Label": "Titulo",
                 "DefaultContent": "Product List"
               },
-              "items-config": {
+              "products-items-config": {
                 "image": {
                   "ID": "image",
-                  "Type": "file input",
+                  "Type": "file",
                   "Label": "Imagen",
-                  "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
+                  "defaultcontent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
                 },
                 "name": {
                   "ID": "name",
@@ -359,7 +516,7 @@
             },
             "Config": {
               "images": {
-                "ID": "image",
+                "ID": "images",
                 "Type": "item-selector",
                 "Label": "Imagenes",
                 "DefaultContent": {
@@ -379,10 +536,10 @@
                 "Label": "Titulo",
                 "DefaultContent": ""
               },
-              "items-config": {
+              "images-items-config": {
                 "img": {
                   "ID": "img",
-                  "Type": "input file",
+                  "Type": "file",
                   "Label": "Imagen",
                   "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
                 },
