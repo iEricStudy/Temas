@@ -81,6 +81,8 @@ body{
 }
 
 body{
+  display: flex;
+  flex-direction: column;
   font-family: var(--ff-text);
   font-size: var(--fs-base);
 }
@@ -336,8 +338,8 @@ header{
         margin-bottom: 10px;
       }
 
-    .ips-footer .ips-footer-top .ips-footer-nav-list .nav-item,
-    .ips-footer .ips-footer-top .ips-footer-social-list .nav-item{
+    .ips-footer .ips-footer-top .ips-footer-nav-list .ips-nav-item,
+    .ips-footer .ips-footer-top .ips-footer-social-list .ips-nav-item{
       align-self: flex-start;
       margin: 5px 0;
     }

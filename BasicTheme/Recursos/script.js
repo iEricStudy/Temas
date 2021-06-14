@@ -106,7 +106,7 @@ function init(){
     });
   }
   
-  // loadSliders();
+  loadSliders();
 }
 
 window.addEventListener('load', init, false);
