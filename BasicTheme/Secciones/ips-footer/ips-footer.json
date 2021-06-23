@@ -1,0 +1,8 @@
+{
+  "ID": "",
+  "Name": "ips-site-footer",
+  "Type": "footer",
+  "Order": 1,
+  "Path": "Secciones/ips-footer/ips-footer",
+  "Blocks": {}
+}

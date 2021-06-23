@@ -1,33 +1,31 @@
 {
-  "id": "",
-  "block-name": "Image with Text",
-  "type": "ips-image-text",
-  "path": "Bloques\\ips-simple-text\\ips-simple-text",
-  "content" : {
+  "ID": "",
+  "Name": "Image with Text",
+  "Type": "ips-image-text",
+  "Path": "Bloques/ips-image-text/ips-image-text",
+  "Content": {
     "image": "",
-    "title" : "",
-    "text" : "",
-    "btn-label" : "",
-    "btn-link" : ""
+    "title": "",
+    "text": ""
   },
-  "config": {
-    "image":{
-      "id": "image",
-      "type": "input file",
-      "label": "Imagen",
-      "defaul": "../Recursos/info.png"
+  "Config": {
+    "image": {
+      "ID": "image",
+      "Type": "file",
+      "Label": "Imagen",
+      "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg"
     },
-    "title" : {
-      "id" : "title",
-      "type" : "text",
-      "label" : "Titulo",
-      "default" : "Texto con Imagen"
+    "title": {
+      "ID": "title",
+      "Type": "text",
+      "Label": "Titulo",
+      "DefaultContent": "Texto con Imagen"
     },
-    "text" : {
-      "id" : "text",
-      "type" : "richtext",
-      "label" : "Texto",
-      "default" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
+    "text": {
+      "ID": "text",
+      "Type": "richtext",
+      "Label": "Texto",
+      "DefaultContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
     }
   }
 }

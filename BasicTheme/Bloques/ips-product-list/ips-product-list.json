@@ -1,26 +1,38 @@
 {
-  "id":"",
-  "block-name":"Product List",
-  "type":"ips-product-list",
-  "path": "Bloques\\ips-product-list\\ips-product-list",
-  "content": {
-    "products": {},
+  "ID": "",
+  "Name": "Product List",
+  "Type": "ips-product-list",
+  "Path": "Bloques/ips-product-list/ips-product-list",
+  "Content": {
+    "product": {},
     "title": ""
   },
-  "config": {
-    "products": {
-      "id": "products",
-      "type": "item-selector",
-      "label": "Productos",
-      "default": {
-        "ips-product-item-0": {
-          "image": "../Recursos/img1.jpg",
+  "Config": {
+    "product": {
+      "ID": "product",
+      "Type": "item-selector",
+      "Label": "Productos",
+      "DefaultContent": {
+        "product-0": {
+          "image": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
           "name": "Producto",
           "details": "Detalle Producto",
           "price": 100
         },
-        "ips-product-item-1": {
-          "image": "../Recursos/img2.jpg",
+        "product-1": {
+          "image": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg",
+          "name": "Producto",
+          "details": "Detalle Producto",
+          "price": 200
+        },
+        "product-2": {
+          "image": "http://127.0.0.1:8887/Recursos/Imagenes/img3.jpg",
+          "name": "Producto",
+          "details": "Detalle Producto",
+          "price": 200
+        },
+        "product-3": {
+          "image": "http://127.0.0.1:8887/Recursos/Imagenes/img4.jpg",
           "name": "Producto",
           "details": "Detalle Producto",
           "price": 200
@@ -28,35 +40,35 @@
       }
     },
     "title": {
-      "id": "title",
-      "type": "text",
-      "label": "Titulo",
-      "default": "Product List"
+      "ID": "title",
+      "Type": "text",
+      "Label": "Titulo",
+      "DefaultContent": "Product List"
     },
-    "items-config": {
+    "product-items-config": {
       "image": {
-        "id": "image",
-        "type": "file input",
-        "label": "Imagen",
-        "default": "../Recursos/img1.jpg"
+        "ID": "image",
+        "Type": "file",
+        "Label": "Imagen",
+        "defaultcontent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
       },
       "name": {
-        "id": "name",
-        "type": "text",
-        "label": "Nomre",
-        "default": "Producto"
+        "ID": "name",
+        "Type": "text",
+        "Label": "Nombre",
+        "DefaultContent": "Producto"
       },
       "details": {
-        "id": "details",
-        "type": "text",
-        "label": "Detalles",
-        "default": "Detalles Producto"
+        "ID": "details",
+        "Type": "text",
+        "Label": "Detalles",
+        "DefaultContent": "Detalles Producto"
       },
       "price": {
-        "id": "price",
-        "type": "number",
-        "label": "Precio",
-        "default": 100
+        "ID": "price",
+        "Type": "number",
+        "Label": "Precio",
+        "DefaultContent": 100
       }
     }
   }

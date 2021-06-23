@@ -1,35 +1,71 @@
 {
-  "nombre_bloque": "Slideshow",
-  "contenido": {
-    "ips-slide-item-0": {
-      "imagen": "../Recursos/img1.jpg",
-      "texto": "Categoria 1",
-      "overlay_color": "rgba(0,0,0,0.5)"
-    },
-    "ips-slide-item-1": {
-      "imagen": "../Recursos/img1.jpg",
-      "texto": "Categoria 2",
-      "overlay_color": "rgba(0,0,0,0.5)"
-    },
-    "ips-slide-item-2": {
-      "imagen": "../Recursos/img1.jpg",
-      "texto": "Categoria 3",
-      "overlay_color": "rgba(0,0,0,0.5)"
-    }
+  "ID": "",
+  "Name": "Slideshow",
+  "Type": "ips-slideshow",
+  "Path": "Bloques/ips-slideshow/ips-slideshow",
+  "Content": {
+    "slide": {},
+    "auto-scroll": ""
   },
-  "configuraciones": {
-    "slides":{
-      "id": "SlidesSelector",
-      "tipo": "item-selector",
-      "label": "slides",
-      "default": {
-
+  "Config": {
+    "slide": {
+      "ID": "slide",
+      "Type": "item-selector",
+      "Label": "Slides",
+      "DefaultContent": {
+        "slide-0": {
+          "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner1.jpg",
+          "title": "Categoria 1",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
+          "btn-label": "Ver",
+          "btn-link": "#"
+        },
+        "slide-1": {
+          "image": "http://127.0.0.1:8887/Recursos/Imagenes/banner2.png",
+          "title": "Categoria 1",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and",
+          "btn-label": "Ver",
+          "btn-link": "#"
+        }
       }
     },
-    "auto-scroll":{
-      "id": "AutoScroll",
-      "tipo": "checkBox",
-      "label": "Slide automatico"
+    "auto-scroll": {
+      "ID": "auto-scroll",
+      "Type": "checkBox",
+      "Label": "Slide automatico",
+      "DefaultContent": "true"
+    },
+    "slide-items-config": {
+      "image": {
+        "ID": "image",
+        "Type": "file",
+        "Label": "Imagen",
+        "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/banner2.png"
+      },
+      "title": {
+        "ID": "title",
+        "Type": "text",
+        "Label": "Titulo",
+        "DefaultContent": "Cafe"
+      },
+      "text": {
+        "ID": "text",
+        "Type": "text",
+        "Label": "Texto",
+        "DefaultContent": ""
+      },
+      "btn-label": {
+        "ID": "btn-label",
+        "Type": "text",
+        "Label": "Etiqueta del Boton",
+        "DefaultContent": ""
+      },
+      "btn-link": {
+        "ID": "btn-link",
+        "Type": "text",
+        "Label": "Link",
+        "DefaultContent": ""                  
+      }
     }
   }
 }

@@ -1,0 +1,60 @@
+{
+  "Types": {
+    "Collection":{
+      "ips-collection-group":{
+        "ID": "ips-collection-group",
+        "Name": "Grupo de Categorias",
+        "Path": "Bloques/ips-collection-group/ips-collection-group",
+        "Type": ""        
+      },
+      "ips-comparison-group":{
+        "ID": "ips-comparison-group",
+        "Name": "Grupo de Comparaciones",
+        "Path": "Bloques/ips-collection-group/ips-collection-group",
+        "Type": ""
+      },
+      "ips-product-list": {
+        "ID": "ips-product-list",
+        "Name": "Lista de productos",
+        "Path": "Bloques/ips-product-list/ips-product-list",
+        "Type": ""
+      }
+    },
+    "Image": {
+      "ips-slideshow":{
+        "ID": "ips-slideshow",
+        "Name": "Slideshow",
+        "Path": "Bloques/ips-slideshow/ips-slideshow",
+        "Type": ""
+      },
+      "ips-image-group":{
+        "ID": "ips-image-group",
+        "Name": "Grupo de imagenes",
+        "Path": "Bloques/ips-image-group/ips-image-group",
+        "Type": ""
+      },
+      "ips-image-text":{
+        "ID": "ips-image-text",
+        "Name": "Imagen con texto",
+        "Path": "Bloques/ips-image-text/ips-image-text",
+        "Type": ""
+      }
+    },
+    "Text": {
+      "ips-simple-text": {
+        "ID": "ips-simple-text",
+        "Name": "Texto Simple",
+        "Path": "Bloques/ips-simple-text/ips-simple-text",
+        "Type": ""
+      }
+    },
+    "Header Blocks": {
+      "": {
+        
+      }
+    },
+    "Footer Blocks": {
+
+    }
+  }
+}

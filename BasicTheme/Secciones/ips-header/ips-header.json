@@ -1,0 +1,8 @@
+{
+  "ID": "",
+  "Name": "ips-site-header",
+  "Type": "header",
+  "Order": -1,
+  "Path": "Secciones/ips-header/ips-header",
+  "Blocks": {}
+}

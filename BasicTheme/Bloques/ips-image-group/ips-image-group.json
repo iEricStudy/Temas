@@ -1,46 +1,46 @@
 {
-  "id": "",
-  "block-name": "Image Group",
-  "type": "ips-image-group",
-  "path": "Bloques\\ips-image-group\\ips-image-group",
-  "content": {
-    "images": {},
+  "ID": "",
+  "Name": "Image Group",
+  "Type": "ips-image-group",
+  "Path": "Bloques/ips-image-group/ips-image-group",
+  "Content": {
+    "image": {},
     "title": ""
   },
-  "config":{
-    "images": {
-      "id": "image",
-      "type": "item-selector",
-      "label": "Imagenes",
-      "default": {
-        "ips-image-item-0": {
-          "img": "../Recursos/img1.jpg",
+  "Config": {
+    "image": {
+      "ID": "image",
+      "Type": "item-selector",
+      "Label": "Imagenes",
+      "DefaultContent": {
+        "image-0": {
+          "img": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg",
           "title": ""
         },
-        "ips-image-item-1": {
-          "img": "../Recursos/img2.jpg",
+        "image-1": {
+          "img": "http://127.0.0.1:8887/Recursos/Imagenes/img2.jpg",
           "title": ""
         }
       }
     },
     "title": {
-      "id": "title",
-      "type": "text",
-      "label": "Titulo",
-      "Default": ""
+      "ID": "title",
+      "Type": "text",
+      "Label": "Titulo",
+      "DefaultContent": ""
     },
-    "items-config": {
+    "image-items-config": {
       "img": {
-        "id": "img",
-        "type": "input file",
-        "label": "Imagen",
-        "default": "../Recursos/img1.jpg"
+        "ID": "img",
+        "Type": "file",
+        "Label": "Imagen",
+        "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
       },
       "title": {
-        "id": "title",
-        "type": "text",
-        "label": "Titulo",
-        "default": ""
+        "ID": "title",
+        "Type": "text",
+        "Label": "Titulo",
+        "DefaultContent": ""
       }
     }
   }
