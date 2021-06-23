@@ -7,7 +7,10 @@
     "product": {},
     "title": ""
   },
-  "Config": {
+  "Style": {
+
+  },
+  "ConfigContent": {
     "product": {
       "ID": "product",
       "Type": "item-selector",
@@ -71,5 +74,8 @@
         "DefaultContent": 100
       }
     }
+  },
+  "ConfigStyle": {
+    
   }
 }

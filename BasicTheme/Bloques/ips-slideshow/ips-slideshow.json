@@ -7,7 +7,10 @@
     "slide": {},
     "auto-scroll": ""
   },
-  "Config": {
+  "Style": {
+
+  },
+  "ConfigContent": {
     "slide": {
       "ID": "slide",
       "Type": "item-selector",
@@ -67,5 +70,8 @@
         "DefaultContent": ""                  
       }
     }
+  },
+  "ConfigStyle": {
+    
   }
 }

@@ -595,7 +595,7 @@
                   "ID": "image",
                   "Type": "file",
                   "Label": "Imagen",
-                  "defaultcontent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
+                  "DefaultContent": "http://127.0.0.1:8887/Recursos/Imagenes/img1.jpg"
                 },
                 "name": {
                   "ID": "name",
