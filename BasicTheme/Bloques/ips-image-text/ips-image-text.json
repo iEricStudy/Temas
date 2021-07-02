@@ -6,10 +6,13 @@
   "Content": {
     "image": "",
     "title": "",
-    "text": ""
+    "text": "",
+    "btn-label": "",
+    "btn-link": ""
   },
   "Style": {
-
+    "image-alginment": "",
+    "btn-color": ""
   },
   "ConfigContent": {
     "image": {
@@ -26,12 +29,45 @@
     },
     "text": {
       "ID": "text",
-      "Type": "richtext",
+      "Type": "textarea",
       "Label": "Texto",
       "DefaultContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
+    },
+    "btn-label": {
+      "ID": "btn-label",
+      "Type": "text",
+      "Label": "Etiqueta del boton",
+      "DefaultContent": ""
+    },
+    "btn-link": {
+      "ID": "btn-link",
+      "Type": "text",
+      "Label": "Enlace del Boton",
+      "DefaultContent": "#"
     }
   },
   "ConfigStyle": {
-    
+    "image-alginment": {
+      "ID": "image-alginment",
+      "Type": "select",
+      "Label": "Alineamiento de imagen",
+      "DefaultContent": "center",
+      "Attributes": {
+        "Options": {
+          "Centro": "center",
+          "Izquierda": "left",
+          "Derecha": "right"
+        }
+      }
+    },
+    "btn-color": {
+      "ID": "btn-color",
+      "Type": "select",
+      "Label": "Color del boton",
+      "DefaultContent": "main-color",
+      "Attributes": {
+        "SelectType": "colors"
+      }
+    }
   }
 }

@@ -1,23 +1,27 @@
 /***** TEXT & IMAGE *****/
 
-.ips-image-text{
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.ips-block.center[section="{section}"][block="{block}"] .ips-image-text{
+  flex-direction: column !important;
 }
 
-  .ips-image-text .ips-text[min-width~="900px"] .ips-content{
-    width: 80%;
-  }
+.ips-block.right[section="{section}"][block="{block}"] .ips-image-text{
+ flex-direction: row !important;
+}
 
-  .ips-image-text .ips-image{
-    padding: 10px;
-    flex: 50%;
-  }
+.ips-block.left[section="{section}"][block="{block}"] .ips-image-text{
+  flex-direction: row-reverse !important;
+}
 
-    .ips-image-text:not(.ips-comparison-item) .ips-image[min-width~="730px"] img{
-      margin: auto;
-      width: 50%;
-      min-width: 450px;
-    }
+.ips-block.right[section="{section}"][block="{block}"] .ips-image-text > *,
+.ips-block.left[section="{section}"][block="{block}"] .ips-image-text > *{
+  flex: 50% !important;
+}
+
+.ips-block.right[section="{section}"][block="{block}"] .ips-image-text .ips-image img,
+.ips-block.left[section="{section}"][block="{block}"] .ips-image-text .ips-image img{
+  width: 100% !important;
+}
+
+.ips-block[section="{section}"][block="{block}"] .ips-btn{
+  background: btn-color;
+}

@@ -10,10 +10,14 @@
     flex: 0 0 100%;
   }
 
-  .ips-comparison-group .ips-items-group[min-width~="700px"] .ips-comparison-item{
-    flex: 0 0 50%;
+  @media screen and (min-width: 700px){
+    .ips-comparison-group .ips-items-group .ips-comparison-item{
+      flex: 0 0 50%;
+    }
   }
 
-  .ips-comparison-group .ips-items-group[min-width~="950px"] .ips-comparison-item{
-    flex: 0 0 30%;
+  @media screen and (min-width: 950px){
+    .ips-comparison-group .ips-items-group .ips-comparison-item{
+      flex: 0 0 30%;
+    }
   }

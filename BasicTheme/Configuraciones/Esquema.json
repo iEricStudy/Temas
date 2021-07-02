@@ -1,6 +1,29 @@
 {
   "General": "Informacion",
   "Path": "http://127.0.0.1:8887/",
+  "Style": {
+    "Name": "",
+    "Fonts": [
+      { }
+    ],
+    "Colors": [
+      {
+        "Name": "main-color",
+        "Label": "Color principal",
+        "Value": "#DDDDDD"
+      },
+      {
+        "Name": "green",
+        "Label": "Verde",
+        "Value": "#32A852"
+      },
+      {
+        "Name": "azul",
+        "Label": "Azul",
+        "Value": "#3242a8"
+      }
+    ]
+  },
   "Pages": {
     "Home": {
       "ID": "Home",
@@ -47,7 +70,14 @@
                     "ID": "logo-alignment",
                     "Type": "select",
                     "Label": "Alineacion Logo",
-                    "DefaultContent": "left"
+                    "DefaultContent": "left",
+                    "Attributes": {
+                      "Options": {
+                        "Centro": "center",
+                        "Izquierda" : "left",
+                        "Derecha": "right"
+                      }
+                    }
                   }
                 }
               },
@@ -420,7 +450,7 @@
               },
               "auto-scroll": {
                 "ID": "auto-scroll",
-                "Type": "checkBox",
+                "Type": "checkbox",
                 "Label": "Slide automatico",
                 "DefaultContent": "true"
               },
@@ -469,7 +499,9 @@
             "Content": {
               "image": "",
               "title": "Prueba",
-              "text": "Esto es un texto de ejemplo para llenar algo y realmente no se porque se lleno tan corto"
+              "text": "Esto es un texto de ejemplo para llenar algo y realmente no se porque se lleno tan corto",
+              "btn-label": "",
+              "btn-link": ""
             },
             "Style": {
               "image-alginment": "",
@@ -490,9 +522,21 @@
               },
               "text": {
                 "ID": "text",
-                "Type": "richtext",
+                "Type": "textarea",
                 "Label": "Texto",
                 "DefaultContent": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and"
+              },
+              "btn-label": {
+                "ID": "btn-label",
+                "Type": "text",
+                "Label": "Etiqueta del boton",
+                "DefaultContent": ""
+              },
+              "btn-link": {
+                "ID": "btn-link",
+                "Type": "text",
+                "Label": "Enlace del Boton",
+                "DefaultContent": "#"
               }
             },
             "ConfigStyle": {
@@ -500,13 +544,23 @@
                 "ID": "image-alginment",
                 "Type": "select",
                 "Label": "Alineamiento de imagen",
-                "DefaultContent": "center"
+                "DefaultContent": "center",
+                "Attributes": {
+                  "Options": {
+                    "Centro": "center",
+                    "Izquierda" : "left",
+                    "Derecha": "right"
+                  }
+                }
               },
               "btn-color": {
                 "ID": "btn-color",
                 "Type": "select",
                 "Label": "Color del boton",
-                "DefaultContent": "gray"
+                "DefaultContent": "#DDDDDD",
+                "Attributes": {
+                  "SelectType": "colors"
+                }
               }
             }
           },

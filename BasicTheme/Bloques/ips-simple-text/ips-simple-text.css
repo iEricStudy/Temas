@@ -6,10 +6,14 @@
   background-color: var(--clr-light-4);
 }
 
-  .ips-simple-text .ips-text[min-width~="600px"] .ips-content{
-    width: 80%;
+  @media screen and (min-width: 600px){
+    .ips-simple-text .ips-text .ips-content{
+      width: 80%;
+    }
   }
 
-  .ips-simple-text .ips-text[min-width~="900px"] .ips-content{
-    width: 70%;
+  @media screen and (min-width: 900px){
+    .ips-simple-text .ips-text .ips-content{
+      width: 70%;
+    }
   }
