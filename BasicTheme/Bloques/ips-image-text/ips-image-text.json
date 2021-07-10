@@ -2,6 +2,7 @@
   "ID": "",
   "Name": "Image with Text",
   "Type": "ips-image-text",
+  "ElementType": "div",
   "Path": "Bloques/ips-image-text/ips-image-text",
   "Content": {
     "image": "",

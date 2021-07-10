@@ -17,6 +17,10 @@ header{
     padding-left: 2rem;
   }
 
+  .ips-header .center{
+    flex-direction: column !important;
+  }
+
     .ips-header .ips-nav-header .ips-nav-toggle{
       font-size: var(--fs-header);
       color: #fff;

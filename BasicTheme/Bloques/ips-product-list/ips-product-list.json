@@ -2,6 +2,7 @@
   "ID": "",
   "Name": "Product List",
   "Type": "ips-product-list",
+  "ElementType": "div",
   "Path": "Bloques/ips-product-list/ips-product-list",
   "Content": {
     "product": {},

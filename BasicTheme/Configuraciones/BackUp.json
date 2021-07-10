@@ -4,7 +4,7 @@
   "Style": {
     "Name": "",
     "Fonts": [
-      {}
+      { }
     ],
     "Colors": [
       {
@@ -34,41 +34,147 @@
         "Sections": {
           "ips-section-0": {
             "ID": "ips-section-0",
-            "Name": "ips-top",
-            "Type": "div",
+            "Name": "ips-site-header",
+            "Type": "header",
             "Order": -1,
-            "Path": "Secciones/ips-top/ips-top",
+            "Path": "Secciones/ips-header/ips-header",
             "Blocks": {
               "ips-block-0": {
                 "ID": "ips-block-0",
-                "Name": "Site Header",
-                "Type": "ips-site-header",
-                "ElementType": "header",
-                "Path": "Bloques/ips-header/ips-header",
+                "Name": "Logo",
+                "Type": "ips-nav-header",
+                "Path": "Secciones/ips-header-ips-header",
                 "Content": {
-                  "logo-text": "",
-                  "logo-image": "",
-                  "nav": ""
+                  "logo": "",
+                  "link": ""
+                },
+                "Style": {
+                  "logo-alignment": ""
+                },
+                "ConfigContent": {
+                  "logo": {
+                    "ID": "logo",
+                    "Type": "text",
+                    "Label": "Logo",
+                    "DefaultContent": "Logo"
+                  },
+                  "link": {
+                    "ID": "link",
+                    "Type": "text",
+                    "Label": "Enlace",
+                    "DefaultContent": "#"
+                  }
+                },
+                "ConfigStyle": {
+                  "logo-alignment": {
+                    "ID": "logo-alignment",
+                    "Type": "select",
+                    "Label": "Alineacion Logo",
+                    "DefaultContent": "left",
+                    "Attributes": {
+                      "Options": {
+                        "Centro": "center",
+                        "Izquierda" : "left",
+                        "Derecha": "right"
+                      }
+                    }
+                  }
+                }
+              },
+              "ips-block-1": {
+                "ID": "ips-block-1",
+                "Name": "Lista",
+                "Type": "ips-nav-list",
+                "Path": "Secciones/ips-header-ips-header",
+                "Content": {
+                  "link": {
+                    "link-0": {
+                      "link-name": "Home",
+                      "link-value": "https://www.google.com/"
+                    },
+                    "link-1": {
+                      "link-name": "About",
+                      "link-value": "#"
+                    },
+                    "link-2": {
+                      "link-name": "Service",
+                      "link-value": "#"
+                    },
+                    "link-3": {
+                      "link-name": "Gallery",
+                      "link-value": "#"
+                    },
+                    "link-4": {
+                      "link-name": "Contact Us",
+                      "link-value": "#"
+                    }
+                  },
+                  "other": {
+                    "other-0": {
+                      "search-name": "Search",
+                      "search-value": "#"
+                    }
+                  }
                 },
                 "Style": {},
                 "ConfigContent": {
-                  "logo-text": {
-                    "ID": "logo-text",
-                    "Type": "text",
-                    "Label": "Titulo del Logo",
-                    "DefaultContent": "iPlus"
+                  "link": {
+                    "ID": "link",
+                    "Type": "item-selector",
+                    "Label": "Enlaces",
+                    "DefaultContent": {
+                      "link-0": {
+                        "link-name": "link1",
+                        "link-value": "#"
+                      },
+                      "link-1": {
+                        "link-name": "link2",
+                        "link-value": "#"
+                      },
+                      "link-2": {
+                        "link-name": "link3",
+                        "link-value": "#"
+                      }
+                    }
                   },
-                  "logo-image": {
-                    "ID": "logo-image",
-                    "Type": "file",
-                    "Label": "Imgen del logo",
-                    "DefaultContent": ""
+                  "other": {
+                    "ID": "other",
+                    "Type": "item-selector",
+                    "Label": "Otros Enlaces",
+                    "DefaultContent": {
+                      "other-0": {
+                        "search-name": "Search",
+                        "search-value": "#"
+                      }
+                    }
                   },
-                  "nav": {
-                    "ID": "nav",
-                    "Type": "menu",
-                    "Label": "Menu",
-                    "DefaultContent": "main-menu"
+                  "link-items-config": {
+                    "link-name": {
+                      "ID": "link-name",
+                      "Type": "text",
+                      "Label": "Etiqueta",
+                      "DefaultContent": "Link"
+                    },
+                    "link-value": {
+                      "ID": "link-value",
+                      "Type": "text",
+                      "Label": "Enlace",
+                      "DefaultContent": "#"
+                    }
+                  },
+                  "other-items-config": {
+                    "search-name": {
+                      "ID": "search-name",
+                      "Type": "text",
+                      "Label": "Etiqueta",
+                      "DefaultContent": "Link"
+                    },
+                    "search-value": {
+                      "ID": "search-value",
+                      "Type": "text",
+                      "Label": "Enlace",
+                      "DefaultContent": "#"
+                    }
                   }
                 },
                 "ConfigStyle": {}
@@ -77,136 +183,219 @@
           },
           "ips-section-1": {
             "ID": "ips-section-1",
-            "Name": "ips-bottom",
-            "Type": "div",
-            "Order": -1,
-            "Path": "Secciones/ips-bottom/ips-bottom",
+            "Name": "ips-site-footer",
+            "Type": "footer",
+            "Order": 1,
+            "Path": "Secciones/ips-footer/ips-footer",
             "Blocks": {
               "ips-block-0": {
                 "ID": "ips-block-0",
-                "Name": "Footer",
-                "Type": "ips-site-footer",
-                "ElementType": "footer",
+                "Name": "Menu",
+                "Type": "ips-footer-nav-list",
                 "Path": "Bloques/ips-footer/ips-footer",
                 "Content": {
-                  
+                  "title": "Nosotros",
+                  "link": {
+                    "link-0": {
+                      "link-name": "Sobre Nosotros",
+                      "link-value": "https://www.google.com/"
+                    },
+                    "link-1": {
+                      "link-name": "Nuestra Historia",
+                      "link-value": "#"
+                    },
+                    "link-2": {
+                      "link-name": "Sobre Nosotros",
+                      "link-value": "#"
+                    }
+                  }
                 },
                 "Style": {},
                 "ConfigContent": {
-                  "content": {
-                    "ID": "content",
-                    "Type": "container",
-                    "Label": "Contenido",
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Menu"
+                  },
+                  "link": {
+                    "ID": "link",
+                    "Type": "item-selector",
+                    "Label": "Enlaces",
                     "DefaultContent": {
-                      "content-0": {
-                        "Type": "paragraph",
-                        "Content": {
-                          "title": "Parrafo",
-                          "text": "Ejemplo Parrafo"
-                        }
+                      "link-0": {
+                        "link-name": "link1",
+                        "link-value": "#"
                       },
-                      "content-1": {
-                        "Type": "newspaper",
-                        "Content": {
-                          "title": "Newspaper",
-                          "text": "Ejemplo de Newspaper",
-                          "btn": "Suscribir"
-                        }
+                      "link-1": {
+                        "link-name": "link2",
+                        "link-value": "#"
+                      },
+                      "link-2": {
+                        "link-name": "link3",
+                        "link-value": "#"
                       }
-                    },
-                    "Attributes": {
-                      "MaxContent": 6,
-                      "Blocks": [
-                        "menu",
-                        "paragraph",
-                        "newspaper"
-                      ]
                     }
                   },
-                  "menu": {
-                    "ID": "menu",
-                    "Type": "group",
-                    "Label": "Menu",
-                    "DefaultContent": {
-                      "title": "",
-                      "nav": ""
-                    }
-                  },
-                  "paragraph": {
-                    "ID": "paragraph",
-                    "Type": "group",
-                    "Label": "Paragraph",
-                    "DefaultContent": {
-                      "title": "",
-                      "text": ""
-                    }
-                  },
-                  "newspaper": {
-                    "ID": "newspaper",
-                    "Type": "group",
-                    "Label": "Newspaper",
-                    "DefaultContent": {
-                      "title": "",
-                      "text": "",
-                      "btn": ""
-                    }
-                  },
-                  "menu-group-config": {
-                    "title": {
-                      "ID": "title",
+                  "link-items-config": {
+                    "link-name": {
+                      "ID": "link-name",
                       "Type": "text",
-                      "Label": "Titulo",
-                      "DefaultContent": "Menu"
-                    },
-                    "nav": {
-                      "ID": "nav",
-                      "Type": "menu",
-                      "Label": "Menu",
-                      "DefaultContent": "footer-menu"
-                    }
-                  },
-                  "paragraph-group-config": {
-                    "title": {
-                      "ID": "title",
-                      "Type": "text",
-                      "Label": "Titulo",
-                      "DefaultContent": "Parrafo"
-                    },
-                    "text": {
-                      "ID": "text",
-                      "Type": "text",
-                      "Label": "Texto",
-                      "DefaultContent": "Esto es un parrafo de ejemplo"
-                    }
-                  },
-                  "newspaper-group-config": {
-                    "title": {
-                      "ID": "title",
-                      "Type": "text",
-                      "Label": "Titulo",
-                      "DefaultContent": "Newspaper"
-                    },
-                    "text": {
-                      "ID": "text",
-                      "Type": "text",
-                      "Label": "Texto",
-                      "DefaultContent": "Suscribete para saber todas las noticias al momento!"
-                    },
-                    "btn-label": {
-                      "ID": "btn-label",
-                      "Type": "text",
-                      "Label": "Etiqueta del boton",
+                      "Label": "Etiqueta",
                       "DefaultContent": "Link"
+                    },
+                    "link-value": {
+                      "ID": "link-value",
+                      "Type": "text",
+                      "Label": "Enlace",
+                      "DefaultContent": "#"
                     }
                   }
                 },
                 "ConfigStyle": {}
+              },
+              "ips-block-1": {
+                "ID": "ips-block-1",
+                "Name": "Social",
+                "Type": "ips-footer-social-list",
+                "Path": "Bloques/ips-footer/ips-footer",
+                "Content": {
+                  "title": "",
+                  "link": {
+                    "link-0": {
+                      "link-name": "facebook",
+                      "link-value": "#"
+                    },
+                    "link-1": {
+                      "link-name": "instagram",
+                      "link-value": "#"
+                    },
+                    "link-2": {
+                      "link-name": "twitter",
+                      "link-value": "#"
+                    }
+                  }
+                },
+                "Style": {
+
+                },
+                "ConfigContent": {
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Social"
+                  },
+                  "link": {
+                    "ID": "link",
+                    "Type": "item-selector",
+                    "Label": "Enlaces",
+                    "DefaultContent": {
+                      "link-0": {
+                        "link-name": "facebook",
+                        "link-value": "#"
+                      },
+                      "link-1": {
+                        "link-name": "instagram",
+                        "link-value": "#"
+                      },
+                      "link-2": {
+                        "link-name": "twitter",
+                        "link-value": "#"
+                      }
+                    }
+                  },
+                  "link-items-config": {
+                    "link-name": {
+                      "ID": "link-name",
+                      "Type": "text",
+                      "Label": "Etiqueta",
+                      "DefaultContent": "Facebook"
+                    },
+                    "link-value": {
+                      "ID": "link-value",
+                      "Type": "text",
+                      "Label": "Enlace",
+                      "DefaultContent": "#"
+                    }
+                  }
+                },
+                "ConfigStyle": {
+                  
+                }
+              },
+              "ips-block-2": {
+                "ID": "ips-block-2",
+                "Name": "Paragraph",
+                "Type": "ips-footer-text",
+                "Path": "Bloques/ips-footer/ips-footer",
+                "Content": {
+                  "title": "Mi empresa",
+                  "text": "Cualquier cosa que quieras saber sobre nosotros solo escribenos."
+                },
+                "Style": {
+
+                },
+                "ConfigContent": {
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Titulo"
+                  },
+                  "text": {
+                    "ID": "text",
+                    "Type": "text",
+                    "Label": "Texto",
+                    "DefaultContent": "Cualquier texto para que este apartado no se quede vacio"
+                  }
+                },
+                "ConfigStyle": {
+                  
+                }
+              },
+              "ips-block-3": {
+                "ID": "ips-block-3",
+                "Name": "Newsletter",
+                "Type": "ips-footer-newsletter",
+                "Path": "Bloques/ips-footer/ips-footer",
+                "Content": {
+                  "title": "",
+                  "text": "",
+                  "btn-label": ""
+                },
+                "Style": {
+
+                },
+                "ConfigContent": {
+                  "title": {
+                    "ID": "title",
+                    "Type": "text",
+                    "Label": "Titulo",
+                    "DefaultContent": "Noticias"
+                  },
+                  "text": {
+                    "ID": "text",
+                    "Type": "text",
+                    "Label": "Texto",
+                    "DefaultContent": "Suscribete para saber todas las noticias al momento!"
+                  },
+                  "btn-label": {
+                    "ID": "btn-label",
+                    "Type": "text",
+                    "Label": "Etiqueta",
+                    "DefaultContent": "Suscribete"
+                  }
+                },
+                "ConfigStyle": {
+                  
+                }
               }
             }
           }
-        }
+        } 
       },
-      "Template": {
+      "Template":{
         "Name": "Portada",
         "Path": "Plantilla/portada",
         "Blocks": {
@@ -214,7 +403,6 @@
             "ID": "ips-block-0",
             "Name": "Slideshow",
             "Type": "ips-slideshow",
-            "ElementType": "div",
             "Path": "Bloques/ips-slideshow/ips-slideshow",
             "Content": {
               "slide": {
@@ -235,7 +423,9 @@
               },
               "auto-scroll": "true"
             },
-            "Style": {},
+            "Style": {
+
+            },
             "ConfigContent": {
               "slide": {
                 "ID": "slide",
@@ -293,17 +483,18 @@
                   "ID": "btn-link",
                   "Type": "text",
                   "Label": "Link",
-                  "DefaultContent": ""
+                  "DefaultContent": ""                  
                 }
               }
             },
-            "ConfigStyle": {}
+            "ConfigStyle": {
+              
+            }
           },
           "ips-block-1": {
             "ID": "ips-block-1",
             "Name": "Image with Text",
             "Type": "ips-image-text",
-            "ElementType": "div",
             "Path": "Bloques/ips-image-text/ips-image-text",
             "Content": {
               "image": "",
@@ -357,7 +548,7 @@
                 "Attributes": {
                   "Options": {
                     "Centro": "center",
-                    "Izquierda": "left",
+                    "Izquierda" : "left",
                     "Derecha": "right"
                   }
                 }
@@ -377,13 +568,14 @@
             "ID": "ips-block-2",
             "Name": "Simple Text",
             "Type": "ips-simple-text",
-            "ElementType": "div",
             "Path": "Bloques/ips-simple-text/ips-simple-text",
             "Content": {
               "title": "",
               "text": ""
             },
-            "Style": {},
+            "Style": {
+
+            },
             "ConfigContent": {
               "title": {
                 "ID": "title",
@@ -398,19 +590,22 @@
                 "DefaultContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem fugit nihil sed, ipsum reiciendis blanditiis, nisi nobis magni, nulla fugiat dolore? Totam, odit? Eius delectus dolorem atque cupiditate pariatur velit iure ipsum natus at minus inventore autem accusamus quod, repellat asperiores architecto iusto sequi similique doloremque expedita. Quod libero ratione temporibus unde provident delectus voluptates amet, porro accusamus placeat modi enim totam iste laborum possimus ducimus quidem nobis sapiente ipsum corporis accusantium? Qui sint iste cumque eum molestias eius fugiat at eos voluptatibus inventore! Facere temporibus ipsa ipsum neque repudiandae recusandae asperiores natus illo accusantium, est iure quaerat quibusdam!"
               }
             },
-            "ConfigStyle": {}
+            "ConfigStyle": {
+              
+            }
           },
           "ips-block-3": {
             "ID": "ips-block-3",
             "Name": "Product List",
             "Type": "ips-product-list",
-            "ElementType": "div",
             "Path": "Bloques/ips-product-list/ips-product-list",
             "Content": {
               "product": {},
               "title": ""
             },
-            "Style": {},
+            "Style": {
+
+            },
             "ConfigContent": {
               "product": {
                 "ID": "product",
@@ -476,19 +671,22 @@
                 }
               }
             },
-            "ConfigStyle": {}
+            "ConfigStyle": {
+              
+            }
           },
           "ips-block-4": {
             "ID": "ips-block-4",
             "Name": "Image Group",
             "Type": "ips-image-group",
-            "ElementType": "div",
             "Path": "Bloques/ips-image-group/ips-image-group",
             "Content": {
               "image": {},
               "title": ""
             },
-            "Style": {},
+            "Style": {
+
+            },
             "ConfigContent": {
               "image": {
                 "ID": "image",
@@ -526,7 +724,9 @@
                 }
               }
             },
-            "ConfigStyle": {}
+            "ConfigStyle": {
+              
+            }
           }
         }
       }

@@ -2,6 +2,7 @@
   "ID": "",
   "Name": "Image Group",
   "Type": "ips-image-group",
+  "ElementType": "div",
   "Path": "Bloques/ips-image-group/ips-image-group",
   "Content": {
     "image": {},

@@ -2,6 +2,7 @@
   "ID": "",
   "Name": "Slideshow",
   "Type": "ips-slideshow",
+  "ElementType": "div",
   "Path": "Bloques/ips-slideshow/ips-slideshow",
   "Content": {
     "slide": {},

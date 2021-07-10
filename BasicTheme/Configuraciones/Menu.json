@@ -1,0 +1,65 @@
+{
+  "main-menu": {
+    "ID": "main-menu",
+    "Name": "Main Menu",
+    "MenuTemplate": "Agregados/main-menu/main-menu.html",
+    "Links": {
+      "link-0": {
+        "link-name": "Home",
+        "link-value": "https://www.google.com/"
+      },
+      "link-1": {
+        "link-name": "About",
+        "link-value": "#"
+      },
+      "link-2": {
+        "link-name": "Service",
+        "link-value": "#"
+      },
+      "link-3": {
+        "link-name": "Gallery",
+        "link-value": "#"
+      },
+      "link-4": {
+        "link-name": "Contact Us",
+        "link-value": "#"
+      }
+    }
+  },
+  "social-menu": {
+    "ID": "social-menu",
+    "Name": "Social Menu",
+    "Links": {
+      "link-0": {
+        "link-name": "facebook",
+        "link-value": "#"
+      },
+      "link-1": {
+        "link-name": "instagram",
+        "link-value": "#"
+      },
+      "link-2": {
+        "link-name": "twitter",
+        "link-value": "#"
+      }
+    }
+  },
+  "footer-menu": {
+    "ID": "footer-menu",
+    "Name": "Footer menu",
+    "Links": {
+      "link-0": {
+        "link-name": "Sobre Nosotros",
+        "link-value": "https://www.google.com/"
+      },
+      "link-1": {
+        "link-name": "Nuestra Historia",
+        "link-value": "#"
+      },
+      "link-2": {
+        "link-name": "Sobre Nosotros",
+        "link-value": "#"
+      }
+    }
+  }
+}

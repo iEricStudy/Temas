@@ -1,0 +1,39 @@
+{
+  "ID": "",
+  "Name": "ips-site-header",
+  "Type": "header",
+  "ElementType": "div",
+  "Path": "Secciones/ips-header/ips-header",
+  "Content": {
+    "logo-text": "",
+    "logo-image": "",
+    "nav": ""
+  },
+  "Style": {
+
+  },
+  "ConfigContent": {
+    "logo-text": {
+      "ID": "logo-text",
+      "Type": "text",
+      "Label": "Titulo del Logo",
+      "DefaultContent": "iPlus"
+    },
+    "logo-image": {
+      "ID": "logo-image",
+      "Type": "file",
+      "Label": "Imgen del logo",
+      "DefaultContent": ""
+    },
+    "nav": {
+      "ID": "nav",
+      "Type": "menu",
+      "Label": "Menu",
+      "DefaultContent": "main-menu"
+    }
+  },
+  "ConfigStyle": {
+
+  }
+}
+

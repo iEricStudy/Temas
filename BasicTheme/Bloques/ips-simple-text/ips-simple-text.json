@@ -2,6 +2,7 @@
   "ID": "",
   "Name": "Simple Text",
   "Type": "ips-simple-text",
+  "ElementType": "div",
   "Path": "Bloques/ips-simple-text/ips-simple-text",
   "Content": {
     "title": "",
