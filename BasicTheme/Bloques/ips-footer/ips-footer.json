@@ -1,0 +1,118 @@
+{
+  "ID": "",
+  "Name": "Footer",
+  "Type": "ips-site-footer",
+  "ElementType": "footer",
+  "Path": "Bloques/ips-footer/ips-footer",
+  "Content": {},
+  "Style": {},
+  "ConfigContent": {
+    "content": {
+      "ID": "content",
+      "Type": "container",
+      "Label": "Contenido",
+      "DefaultContent": {
+        "content-0": {
+          "Type": "paragraph",
+          "Content": {
+            "title": "Parrafo",
+            "text": "Ejemplo Parrafo"
+          }
+        },
+        "content-1": {
+          "Type": "newspaper",
+          "Content": {
+            "title": "Newspaper",
+            "text": "Ejemplo de Newspaper",
+            "btn": "Suscribir"
+          }
+        }
+      },
+      "Attributes": {
+        "MaxContent": 6,
+        "Blocks": [
+          "menu",
+          "paragraph",
+          "newspaper"
+        ]
+      }
+    },
+    "menu": {
+      "ID": "menu",
+      "Type": "group",
+      "Label": "Menu",
+      "DefaultContent": {
+        "title": "",
+        "nav": ""
+      }
+    },
+    "paragraph": {
+      "ID": "paragraph",
+      "Type": "group",
+      "Label": "Paragraph",
+      "DefaultContent": {
+        "title": "",
+        "text": ""
+      }
+    },
+    "newspaper": {
+      "ID": "newspaper",
+      "Type": "group",
+      "Label": "Newspaper",
+      "DefaultContent": {
+        "title": "",
+        "text": "",
+        "btn": ""
+      }
+    },
+    "menu-group-config": {
+      "title": {
+        "ID": "title",
+        "Type": "text",
+        "Label": "Titulo",
+        "DefaultContent": "Menu"
+      },
+      "nav": {
+        "ID": "nav",
+        "Type": "menu",
+        "Label": "Menu",
+        "DefaultContent": "footer-menu"
+      }
+    },
+    "paragraph-group-config": {
+      "title": {
+        "ID": "title",
+        "Type": "text",
+        "Label": "Titulo",
+        "DefaultContent": "Parrafo"
+      },
+      "text": {
+        "ID": "text",
+        "Type": "text",
+        "Label": "Texto",
+        "DefaultContent": "Esto es un parrafo de ejemplo"
+      }
+    },
+    "newspaper-group-config": {
+      "title": {
+        "ID": "title",
+        "Type": "text",
+        "Label": "Titulo",
+        "DefaultContent": "Newspaper"
+      },
+      "text": {
+        "ID": "text",
+        "Type": "text",
+        "Label": "Texto",
+        "DefaultContent": "Suscribete para saber todas las noticias al momento!"
+      },
+      "btn-label": {
+        "ID": "btn-label",
+        "Type": "text",
+        "Label": "Etiqueta del boton",
+        "DefaultContent": "Link"
+      }
+    }
+  },
+  "ConfigStyle": {}
+} 
