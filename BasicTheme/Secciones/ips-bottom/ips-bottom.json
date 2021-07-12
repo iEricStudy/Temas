@@ -1,6 +1,7 @@
 {
   "ID": "",
   "Name": "ips-bottom",
+  "Type": "div",
   "Order": 1,
   "Path": "Secciones/ips-bottom/ips-bottom",
   "Blocks": {}

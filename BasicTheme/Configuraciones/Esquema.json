@@ -79,7 +79,7 @@
             "ID": "ips-section-1",
             "Name": "ips-bottom",
             "Type": "div",
-            "Order": -1,
+            "Order": 1,
             "Path": "Secciones/ips-bottom/ips-bottom",
             "Blocks": {
               "ips-block-0": {
@@ -99,32 +99,39 @@
                     "Label": "Contenido",
                     "DefaultContent": {
                       "content-0": {
-                        "Type": "paragraph",
+                        "Type": "ips-footer-text",
                         "Content": {
                           "title": "Parrafo",
                           "text": "Ejemplo Parrafo"
                         }
                       },
                       "content-1": {
-                        "Type": "newspaper",
+                        "Type": "ips-footer-newsletter",
                         "Content": {
-                          "title": "Newspaper",
-                          "text": "Ejemplo de Newspaper",
+                          "title": "Newsletter",
+                          "text": "Ejemplo de Newsletter",
                           "btn": "Suscribir"
+                        }
+                      },
+                      "content-2": {
+                        "Type": "ips-footer-text",
+                        "Content": {
+                          "title": "Parrafo",
+                          "text": "Ejemplo Parrafo"
                         }
                       }
                     },
                     "Attributes": {
                       "MaxContent": 6,
                       "Blocks": [
-                        "menu",
-                        "paragraph",
-                        "newspaper"
+                        "ips-footer-nav-list",
+                        "ips-footer-text",
+                        "ips-footer-newsletter"
                       ]
                     }
                   },
-                  "menu": {
-                    "ID": "menu",
+                  "ips-footer-nav-list": {
+                    "ID": "ips-footer-nav-list",
                     "Type": "group",
                     "Label": "Menu",
                     "DefaultContent": {
@@ -132,26 +139,26 @@
                       "nav": ""
                     }
                   },
-                  "paragraph": {
-                    "ID": "paragraph",
+                  "ips-footer-text": {
+                    "ID": "ips-footer-text",
                     "Type": "group",
-                    "Label": "Paragraph",
+                    "Label": "Parrafo",
                     "DefaultContent": {
                       "title": "",
                       "text": ""
                     }
                   },
-                  "newspaper": {
-                    "ID": "newspaper",
+                  "ips-footer-newsletter": {
+                    "ID": "ips-footer-newsletter",
                     "Type": "group",
-                    "Label": "Newspaper",
+                    "Label": "Newsletter",
                     "DefaultContent": {
                       "title": "",
                       "text": "",
                       "btn": ""
                     }
                   },
-                  "menu-group-config": {
+                  "ips-footer-nav-list-group-config": {
                     "title": {
                       "ID": "title",
                       "Type": "text",
@@ -165,7 +172,7 @@
                       "DefaultContent": "footer-menu"
                     }
                   },
-                  "paragraph-group-config": {
+                  "ips-footer-text-group-config": {
                     "title": {
                       "ID": "title",
                       "Type": "text",
@@ -179,12 +186,12 @@
                       "DefaultContent": "Esto es un parrafo de ejemplo"
                     }
                   },
-                  "newspaper-group-config": {
+                  "ips-footer-newsletter-group-config": {
                     "title": {
                       "ID": "title",
                       "Type": "text",
                       "Label": "Titulo",
-                      "DefaultContent": "Newspaper"
+                      "DefaultContent": "Newsletter"
                     },
                     "text": {
                       "ID": "text",
