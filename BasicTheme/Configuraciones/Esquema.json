@@ -99,18 +99,17 @@
                     "Label": "Contenido",
                     "DefaultContent": {
                       "content-0": {
-                        "Type": "ips-footer-text",
+                        "Type": "ips-footer-nav-list",
                         "Content": {
-                          "title": "Parrafo",
-                          "text": "Ejemplo Parrafo"
+                          "title": "Menu",
+                          "nav": "footer-menu"
                         }
                       },
                       "content-1": {
-                        "Type": "ips-footer-newsletter",
+                        "Type": "ips-footer-nav-list",
                         "Content": {
-                          "title": "Newsletter",
-                          "text": "Ejemplo de Newsletter",
-                          "btn": "Suscribir"
+                          "title": "Social",
+                          "nav": "social-menu"
                         }
                       },
                       "content-2": {
@@ -118,6 +117,14 @@
                         "Content": {
                           "title": "Parrafo",
                           "text": "Ejemplo Parrafo"
+                        }
+                      },
+                      "content-3": {
+                        "Type": "ips-footer-newsletter",
+                        "Content": {
+                          "title": "Newsletter",
+                          "text": "Ejemplo de Newsletter",
+                          "btn": "Suscribir"
                         }
                       }
                     },
@@ -362,11 +369,20 @@
                 "Label": "Alineamiento de imagen",
                 "DefaultContent": "center",
                 "Attributes": {
-                  "Options": {
-                    "Centro": "center",
-                    "Izquierda": "left",
-                    "Derecha": "right"
-                  }
+                  "Options": [
+                    {
+                      "Label": "Centro",
+                      "Value": "center"
+                    },
+                    {
+                      "Label": "Izquierda",
+                      "Value": "left"
+                    },
+                    {
+                      "Label": "Derecha",
+                      "Value": "right"
+                    }
+                  ]
                 }
               },
               "btn-color": {

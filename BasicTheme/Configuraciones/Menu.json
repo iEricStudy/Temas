@@ -2,7 +2,7 @@
   "main-menu": {
     "ID": "main-menu",
     "Name": "Main Menu",
-    "MenuTemplate": "Agregados/main-menu/main-menu.html",
+    "MenuTemplate": "Agregados/Menus/main-menu.html",
     "Links": {
       "link-0": {
         "link-name": "Home",
@@ -29,6 +29,7 @@
   "social-menu": {
     "ID": "social-menu",
     "Name": "Social Menu",
+    "MenuTemplate": "Agregados/Menus/social-menu.html",
     "Links": {
       "link-0": {
         "link-name": "facebook",
@@ -47,6 +48,7 @@
   "footer-menu": {
     "ID": "footer-menu",
     "Name": "Footer menu",
+    "MenuTemplate": "Agregados/Menus/main-menu.html",
     "Links": {
       "link-0": {
         "link-name": "Sobre Nosotros",
