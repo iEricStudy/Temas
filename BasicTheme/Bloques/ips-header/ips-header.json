@@ -1,17 +1,15 @@
 {
   "ID": "",
-  "Name": "ips-site-header",
-  "Type": "header",
-  "ElementType": "div",
-  "Path": "Secciones/ips-header/ips-header",
+  "Name": "Site Header",
+  "Type": "ips-site-header",
+  "ElementType": "header",
+  "Path": "Bloques/ips-header/ips-header",
   "Content": {
     "logo-text": "",
     "logo-image": "",
     "nav": ""
   },
-  "Style": {
-
-  },
+  "Style": {},
   "ConfigContent": {
     "logo-text": {
       "ID": "logo-text",
@@ -32,8 +30,5 @@
       "DefaultContent": "main-menu"
     }
   },
-  "ConfigStyle": {
-
-  }
+  "ConfigStyle": {}
 }
-

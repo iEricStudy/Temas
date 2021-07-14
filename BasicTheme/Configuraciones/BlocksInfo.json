@@ -4,57 +4,54 @@
       "ips-collection-group":{
         "ID": "ips-collection-group",
         "Name": "Grupo de Categorias",
-        "Path": "Bloques/ips-collection-group/ips-collection-group",
-        "Type": ""        
+        "Path": "Bloques/ips-collection-group/ips-collection-group"        
       },
       "ips-comparison-group":{
         "ID": "ips-comparison-group",
         "Name": "Grupo de Comparaciones",
-        "Path": "Bloques/ips-collection-group/ips-collection-group",
-        "Type": ""
+        "Path": "Bloques/ips-collection-group/ips-collection-group"
       },
       "ips-product-list": {
         "ID": "ips-product-list",
         "Name": "Lista de productos",
-        "Path": "Bloques/ips-product-list/ips-product-list",
-        "Type": ""
+        "Path": "Bloques/ips-product-list/ips-product-list"
       }
     },
     "Image": {
       "ips-slideshow":{
         "ID": "ips-slideshow",
         "Name": "Slideshow",
-        "Path": "Bloques/ips-slideshow/ips-slideshow",
-        "Type": ""
+        "Path": "Bloques/ips-slideshow/ips-slideshow"
       },
       "ips-image-group":{
         "ID": "ips-image-group",
         "Name": "Grupo de imagenes",
-        "Path": "Bloques/ips-image-group/ips-image-group",
-        "Type": ""
+        "Path": "Bloques/ips-image-group/ips-image-group"
       },
       "ips-image-text":{
         "ID": "ips-image-text",
         "Name": "Imagen con texto",
-        "Path": "Bloques/ips-image-text/ips-image-text",
-        "Type": ""
+        "Path": "Bloques/ips-image-text/ips-image-text"
       }
     },
     "Text": {
       "ips-simple-text": {
         "ID": "ips-simple-text",
         "Name": "Texto Simple",
-        "Path": "Bloques/ips-simple-text/ips-simple-text",
-        "Type": ""
+        "Path": "Bloques/ips-simple-text/ips-simple-text"
       }
     },
-    "Header Blocks": {
-      "": {
-        
+    "WebSite Sections": {
+      "ips-header": {
+        "ID": "ips-header",
+        "Name": "Header",
+        "Path": "Bloques/ips-header/ips-header"
+      },
+      "ips-footer": {
+        "ID": "ips-footer",
+        "Name": "Footer",
+        "Path": "Bloques/ips-footer/ips-footer"
       }
-    },
-    "Footer Blocks": {
-
     }
   }
 }
