@@ -89,7 +89,7 @@
                 "ElementType": "footer",
                 "Path": "Bloques/ips-footer/ips-footer",
                 "Content": {
-                  
+                  "content": {}
                 },
                 "Style": {},
                 "ConfigContent": {
