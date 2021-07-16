@@ -4,7 +4,9 @@
   "Type": "ips-site-footer",
   "ElementType": "footer",
   "Path": "Bloques/ips-footer/ips-footer",
-  "Content": {},
+  "Content": {
+    "content": {}
+  },
   "Style": {},
   "ConfigContent": {
     "content": {
@@ -13,17 +15,31 @@
       "Label": "Contenido",
       "DefaultContent": {
         "content-0": {
-          "Type": "paragraph",
+          "Type": "ips-footer-nav-list",
+          "Content": {
+            "title": "Menu",
+            "nav": "footer-menu"
+          }
+        },
+        "content-1": {
+          "Type": "ips-footer-nav-list",
+          "Content": {
+            "title": "Social",
+            "nav": "social-menu"
+          }
+        },
+        "content-2": {
+          "Type": "ips-footer-text",
           "Content": {
             "title": "Parrafo",
             "text": "Ejemplo Parrafo"
           }
         },
-        "content-1": {
-          "Type": "newspaper",
+        "content-3": {
+          "Type": "ips-footer-newsletter",
           "Content": {
-            "title": "Newspaper",
-            "text": "Ejemplo de Newspaper",
+            "title": "Newsletter",
+            "text": "Ejemplo de Newsletter",
             "btn": "Suscribir"
           }
         }
@@ -31,14 +47,14 @@
       "Attributes": {
         "MaxContent": 6,
         "Blocks": [
-          "menu",
-          "paragraph",
-          "newspaper"
+          "ips-footer-nav-list",
+          "ips-footer-text",
+          "ips-footer-newsletter"
         ]
       }
     },
-    "menu": {
-      "ID": "menu",
+    "ips-footer-nav-list": {
+      "ID": "ips-footer-nav-list",
       "Type": "group",
       "Label": "Menu",
       "DefaultContent": {
@@ -46,26 +62,26 @@
         "nav": ""
       }
     },
-    "paragraph": {
-      "ID": "paragraph",
+    "ips-footer-text": {
+      "ID": "ips-footer-text",
       "Type": "group",
-      "Label": "Paragraph",
+      "Label": "Parrafo",
       "DefaultContent": {
         "title": "",
         "text": ""
       }
     },
-    "newspaper": {
-      "ID": "newspaper",
+    "ips-footer-newsletter": {
+      "ID": "ips-footer-newsletter",
       "Type": "group",
-      "Label": "Newspaper",
+      "Label": "Newsletter",
       "DefaultContent": {
         "title": "",
         "text": "",
         "btn": ""
       }
     },
-    "menu-group-config": {
+    "ips-footer-nav-list-group-config": {
       "title": {
         "ID": "title",
         "Type": "text",
@@ -79,7 +95,7 @@
         "DefaultContent": "footer-menu"
       }
     },
-    "paragraph-group-config": {
+    "ips-footer-text-group-config": {
       "title": {
         "ID": "title",
         "Type": "text",
@@ -93,12 +109,12 @@
         "DefaultContent": "Esto es un parrafo de ejemplo"
       }
     },
-    "newspaper-group-config": {
+    "ips-footer-newsletter-group-config": {
       "title": {
         "ID": "title",
         "Type": "text",
         "Label": "Titulo",
-        "DefaultContent": "Newspaper"
+        "DefaultContent": "Newsletter"
       },
       "text": {
         "ID": "text",
@@ -115,4 +131,4 @@
     }
   },
   "ConfigStyle": {}
-} 
+}
