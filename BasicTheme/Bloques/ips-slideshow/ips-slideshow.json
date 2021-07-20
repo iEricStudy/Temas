@@ -6,7 +6,7 @@
   "Path": "Bloques/ips-slideshow/ips-slideshow",
   "Content": {
     "slide": {},
-    "auto-scroll": ""
+    "auto-scroll": true
   },
   "Style": {
 

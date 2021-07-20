@@ -1,45 +1,47 @@
 {
   "General": "Informacion",
   "Path": "http://127.0.0.1:8887/",
-  "Style": {
-    "Name": "",
-    "Fonts": [
-      {}
-    ],
-    "Colors": [
-      {
-        "Name": "main-color",
-        "Label": "Color principal",
-        "Value": "#DDDDDD"
-      },
-      {
-        "Name": "green",
-        "Label": "Verde",
-        "Value": "#32A852"
-      },
-      {
-        "Name": "azul",
-        "Label": "Azul",
-        "Value": "#3242a8"
-      }
-    ]
-  },
-  "Pages": {
-    "Home": {
+  "Style": [
+    {
+      "ID": "Main",
+      "Name": "Principal",
+      "Fonts": [
+      ],
+      "Colors": [
+        {
+          "Name": "main-color",
+          "Label": "Color principal",
+          "Value": "#DDDDDD"
+        },
+        {
+          "Name": "green",
+          "Label": "Verde",
+          "Value": "#32A852"
+        },
+        {
+          "Name": "azul",
+          "Label": "Azul",
+          "Value": "#3242a8"
+        }
+      ]
+    }
+  ],
+  "Pages": [
+    {
       "ID": "Home",
       "Name": "HomePage",
       "Layout": {
         "Name": "Site",
         "Path": "Disenos/sitio",
-        "Sections": {
-          "ips-section-0": {
+        "Sections": [
+          {
             "ID": "ips-section-0",
             "Name": "ips-top",
             "Type": "div",
             "Order": -1,
             "Path": "Secciones/ips-top/ips-top",
-            "Blocks": {
-              "ips-block-0": {
+            "Blocks": [
+              {
                 "ID": "ips-block-0",
                 "Name": "Site Header",
                 "Type": "ips-site-header",
@@ -73,16 +75,16 @@
                 },
                 "ConfigStyle": {}
               }
-            }
+            ]
           },
-          "ips-section-1": {
+          {
             "ID": "ips-section-1",
             "Name": "ips-bottom",
             "Type": "div",
             "Order": 1,
             "Path": "Secciones/ips-bottom/ips-bottom",
-            "Blocks": {
-              "ips-block-0": {
+            "Blocks": [
+              {
                 "ID": "ips-block-0",
                 "Name": "Footer",
                 "Type": "ips-site-footer",
@@ -216,15 +218,15 @@
                 },
                 "ConfigStyle": {}
               }
-            }
+            ]
           }
-        }
+        ]
       },
       "Template": {
         "Name": "Portada",
         "Path": "Plantilla/portada",
-        "Blocks": {
-          "ips-block-0": {
+        "Blocks": [
+          {
             "ID": "ips-block-0",
             "Name": "Slideshow",
             "Type": "ips-slideshow",
@@ -313,7 +315,7 @@
             },
             "ConfigStyle": {}
           },
-          "ips-block-1": {
+          {
             "ID": "ips-block-1",
             "Name": "Image with Text",
             "Type": "ips-image-text",
@@ -396,7 +398,7 @@
               }
             }
           },
-          "ips-block-2": {
+          {
             "ID": "ips-block-2",
             "Name": "Simple Text",
             "Type": "ips-simple-text",
@@ -423,7 +425,7 @@
             },
             "ConfigStyle": {}
           },
-          "ips-block-3": {
+          {
             "ID": "ips-block-3",
             "Name": "Product List",
             "Type": "ips-product-list",
@@ -501,7 +503,7 @@
             },
             "ConfigStyle": {}
           },
-          "ips-block-4": {
+          {
             "ID": "ips-block-4",
             "Name": "Image Group",
             "Type": "ips-image-group",
@@ -551,8 +553,8 @@
             },
             "ConfigStyle": {}
           }
-        }
+        ]
       }
     }
-  }
+  ]
 }
